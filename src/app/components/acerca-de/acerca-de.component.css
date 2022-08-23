@@ -1,0 +1,68 @@
+.row {
+  padding: 20px;
+}
+
+div {
+  background-color: #a1b5cb;
+  text-align:left;
+}
+
+/*estilo de la foto de perfil de 576px para arriba comportate asi*/
+@media (min-width: 576px){
+  #foto__perfil__mitad {
+    position: absolute;
+    width: 13%;
+    border-radius: 100%;
+    /*esto le da una breve sombra left:1.5%;*/
+    box-shadow: 3px 3px 3px grey;
+    top: 460px;
+  }
+}
+
+@media (max-width: 575px){
+  #foto__perfil__mitad {
+    position: absolute;
+    width: 35%;
+    border-radius: 100%;
+    /*esto le da una breve sombra*/
+    box-shadow: 3px 3px 3px grey;
+    left:30%;
+    top: 500px;
+  }
+  #nombre {
+    text-align: center;
+    text-transform: uppercase;
+
+  }
+  #jr{
+    text-align: center;
+
+  }
+}
+
+
+/*etiqueta nombre*/
+#nombre {
+  font-weight: bold;
+  margin-top: 30%;
+  text-transform: uppercase;
+}
+
+/*RESPONSIVE*/
+@media screen and (max-width: 376px){
+  #foto__perfil__mitad {
+  position: absolute;
+  width: 35%;
+  border-radius: 30%;
+  /*esto le da una breve sombra*/
+  box-shadow: 3px 3px 3px grey;
+  left:30%;
+  top: 350px;
+}
+
+}
+
+
+
+
+

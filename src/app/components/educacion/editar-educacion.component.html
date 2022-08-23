@@ -1,0 +1,35 @@
+<div class="container" *ngIf="educacion">
+  <div class="row">
+    <div>
+      <form (ngSubmit)="onUpdate()" novalidate #f="ngForm">
+        <div class="form-group">
+          <label for="nombreEdu">
+            Nombre de la nueva Entidad Educacional que desea crear
+          </label>
+          <input
+            type="text"
+            class="form-control"
+            id="nombreEdu"
+            name="nombreEdu"
+            [(ngModel)]="educacion.nombreEdu"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label for="descripcionEdu">
+            Descripcion de la entidad educativa y/o Estudios
+          </label>
+          <input
+            type="text"
+            class="form-control"
+            id="descripcionEdu"
+            name="descripcionEdu"
+            [(ngModel)]="educacion.descripcionEdu"
+            required
+          />
+        </div>
+        <button class="btn btn-info">Agregar Educacion Editada</button>
+      </form>
+    </div>
+  </div>
+</div>

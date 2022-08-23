@@ -1,0 +1,13 @@
+.imagen__banner {
+  width: 100%;
+  height: 500px;
+}
+
+/*RESPONSIVE*/
+@media screen and (max-width: 376px){
+  .imagen__banner {
+    width: 100%;
+    height: 350px;
+  }
+
+}

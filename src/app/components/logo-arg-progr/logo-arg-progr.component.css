@@ -1,0 +1,22 @@
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo__arg--progr {
+  width: 150px;
+}
+
+.redeSociales {
+  margin-right: 0.9em;
+}
+
+img {
+  width: 40px;
+  padding-right: 0.3rem;
+}
+
+.btn {
+  border-width: medium;
+}
