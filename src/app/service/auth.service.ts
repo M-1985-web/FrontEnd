@@ -10,21 +10,21 @@ import { JwtDto } from '../model/jwt-dto';
 })
 export class AuthService {
   //le pasamos el endpoint del back
-  authURL = 'http://localhost:8080/auth/';
+  //trabajo local
+  //authURL = 'http://localhost:8080/auth/';
 
-  constructor(private httpClient: HttpClient) { }
-  
+  //trabajo en producion
+  authURL = 'https://backendmmm.herokuapp.com/auth/';
+
+  constructor(private httpClient: HttpClient) {}
+
   //metodo nuevo
-  public nuevo(nuevoUsuario: NuevoUsuario): Observable<any>{
+  public nuevo(nuevoUsuario: NuevoUsuario): Observable<any> {
     return this.httpClient.post<any>(this.authURL + 'nuevo', nuevoUsuario);
   }
 
   //metodo login
-  public login(loginUsuario: LoginUsuario): Observable<JwtDto>{
-    return this.httpClient.post<JwtDto>(this.authURL + 'login', loginUsuario)
+  public login(loginUsuario: LoginUsuario): Observable<JwtDto> {
+    return this.httpClient.post<JwtDto>(this.authURL + 'login', loginUsuario);
   }
-
-
-
-
 }

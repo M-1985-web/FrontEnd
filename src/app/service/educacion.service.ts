@@ -8,10 +8,11 @@ import { Educacion } from '../model/educacion';
 })
 export class EducacionService {
   //aca va la url de heroku
-  //URL = 'https://heroku-backendmgb.herokuapp.com/educacion/';
 
   //url por defecto, es de forma local, lo traemos del back /educacion
-  URL = 'http://localhost:8080/educacion/';
+  //produ local
+  //URL = 'http://localhost:8080/educacion/';
+  URL = 'https://backendmmm.herokuapp.com/educacion/';
 
   constructor(private httpClient: HttpClient) {}
 
@@ -21,30 +22,20 @@ export class EducacionService {
     return this.httpClient.get<Educacion[]>(this.URL + 'lista');
   }
 
-
-
   public detail(id: number): Observable<Educacion> {
     return this.httpClient.get<Educacion>(this.URL + `detail/${id}`);
   }
 
-
-
   public save(educacion: Educacion): Observable<any> {
     return this.httpClient.post<any>(this.URL + 'create', educacion);
   }
-
-
 
   //Educacion es el objeto
   public update(id: number, educacion: Educacion): Observable<any> {
     return this.httpClient.put<any>(this.URL + `update/${id}`, educacion);
   }
 
-
-
   public delete(id: number): Observable<any> {
     return this.httpClient.delete<any>(this.URL + `delete/${id}`);
   }
-
-
 }
