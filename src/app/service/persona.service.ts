@@ -9,9 +9,11 @@ import { persona } from '../model/persona.model';
 })
 export class PersonaService {
   //cree la variable URL que llama del front al back, es generico
-  //URL = 'http://localhost:8080/personas/';
+  
+  URL = 'http://localhost:8080/personas/';
 
-  URL = 'https://backendmmm.herokuapp.com/personas/';
+  //URL = 'https://backendmmm.herokuapp.com/personas/';
+
   constructor(private http: HttpClient) {}
 
   //<>corchangulo, observable lo usa angular para peticiones asincronas

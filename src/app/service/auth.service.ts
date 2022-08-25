@@ -11,10 +11,10 @@ import { JwtDto } from '../model/jwt-dto';
 export class AuthService {
   //le pasamos el endpoint del back
   //trabajo local
-  //authURL = 'http://localhost:8080/auth/';
+  authURL = 'http://localhost:8080/auth/';
 
   //trabajo en producion
-  authURL = 'https://backendmmm.herokuapp.com/auth/';
+  //authURL = 'https://backendmmm.herokuapp.com/auth/';
 
   constructor(private httpClient: HttpClient) {}
 
