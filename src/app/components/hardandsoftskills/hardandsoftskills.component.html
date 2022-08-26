@@ -1,8 +1,106 @@
+<div class="row col-sm-12 col-md-12 col-lg-12">
+    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" id="alineado">
+        <h1>Hard & Soft Skills</h1>
+        <div>
+            <button type="button" class="btn btn-outline-success" routerLink="/nuevaskill" *ngIf="isLogged">Nueva Skill</button>
+        </div>
+    </div>
+    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" id="alineado">
+        <h2>Hard Skills</h2>
+    </div>
+
+    <!-- HardSkill -->
+
+    <ul class="col-sm-4 col-md-3 col-lg-3" *ngFor="let Skill of skill">
+            <li>
+                <div  id="skills alineado">
+                    <circle-progress
+                        [percent]="Skill.capacidadS"
+                        [radius]="80"
+                        title= {{Skill.nombreS}}
+                        [showSubtitle]="false"
+                        [showUnits]="false"
+                        [outerStrokeWidth]="8"
+                        [innerStrokeWidth]="2"
+                        [outerStrokeColor]="'#78C000'"
+                        [innerStrokeColor]="'#C7E596'"
+                        [animation]="true"
+                        [animationDuration]="500"
+                    ></circle-progress>
+                    <button class="btn btn-outline-info" id="boton-skill" routerLink="/editskill/{{Skill.id}}" *ngIf="isLogged"><i class="bi bi-pencil-square"></i>editar</button>
+                    <button class="btn btn-outline-danger" id="boton-skill" (click)="borrar(Skill.id)" *ngIf="isLogged"><i class="bi bi-trash3-fill"></i>borrar</button>
+                </div>
+            </li>
+    </ul>
+
+    <!-- Soft -->
+
+    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" id="alineado">
+        <h2>Soft Skill</h2>
+    </div>
+
+    <ul class="col-sm-4 col-md-3 col-lg-3" *ngFor="let softSkill of soft">
+            <li>
+                <div id="skills alineado">
+                    <circle-progress
+                    [percent]="softSkill.capacidadS"
+                    [radius]="80"
+                    title= {{softSkill.nombreS}}
+                    [showSubtitle]="false"
+                    [showUnits]="false"
+                    [outerStrokeWidth]="8"
+                    [innerStrokeWidth]="2"
+                    [outerStrokeColor]="'#78C000'"
+                    [innerStrokeColor]="'#C7E596'"
+                    [animation]="true"
+                    [animationDuration]="500"
+                    ></circle-progress>
+                    <button class="btn btn-outline-info" id="boton-skill" routerLink="/editsoft/{{softSkill.id}}" *ngIf="isLogged"><i class="bi bi-pencil-square">editar</i></button>
+                    <button class="btn btn-outline-danger" id="boton-skill" (click)="borrarsoft(softSkill.id)" *ngIf="isLogged"><i class="bi bi-trash3-fill">borrar</i></button>
+                </div>
+            </li>
+    </ul>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--
 <div class="row">
   <h1>Hard & Soft Skills</h1>
+-->
 
-  <!--HTML5-->
+  <!--HTML5
   <div class="text-center col-sm-4 col-md-4 col-lg-4">
+  -->
+
     <!-- You can now use it in app.component.html
       si queres agregar solo nombre sin imagen
       [showUnits]="false"
@@ -10,6 +108,7 @@
       ojo con los lugares que hay que agregar comillas simples
       el porcentaje lo tengo que configurar desde la interpolacion con typeScr
     -->
+    <!--
     <circle-progress
       [percent]="85"
       [radius]="100"
@@ -28,8 +127,9 @@
       [animationDuration]="300"
     ></circle-progress>
   </div>
+  -->
 
-  <!--CSS3-->
+  <!--CSS3
   <div class="text-center col-sm-4 col-md-4 col-lg-4">
     <circle-progress
       [percent]="70"
@@ -47,8 +147,9 @@
       [animationDuration]="300"
     ></circle-progress>
   </div>
+  -->
 
-  <!--JS-->
+  <!--JS
   <div class="text-center col-sm-4 col-md-4 col-lg-4">
     <circle-progress
       [percent]="25"
@@ -66,8 +167,9 @@
       [animationDuration]="300"
     ></circle-progress>
   </div>
+  -->
 
-  <!--GitHub-->
+  <!--GitHub
   <div class="text-center col-sm-4 col-md-4 col-lg-4">
     <circle-progress
       [percent]="75"
@@ -85,8 +187,9 @@
       [animationDuration]="300"
     ></circle-progress>
   </div>
+  -->
 
-  <!--Grupal trabajo colaborativo-->
+  <!--Grupal trabajo colaborativo
   <div class="text-center col-sm-4 col-md-4 col-lg-4">
     <circle-progress
       [percent]="90"
@@ -104,8 +207,9 @@
       [animationDuration]="300"
     ></circle-progress>
   </div>
+  -->
 
-  <!--ENG ingles-->
+  <!--ENG ingles
   <div class="text-center col-sm-4 col-md-4 col-lg-4">
     <circle-progress
       [percent]="10"
@@ -115,7 +219,7 @@
       [imageHeight]="100"
       [imageWidth]="100"
 
-     
+
 
       [outerStrokeWidth]="10"
       [innerStrokeWidth]="4"
@@ -125,5 +229,7 @@
       [animationDuration]="300"
     ></circle-progress>
   </div>
-
+  -->
+<!--
 </div>
+-->

@@ -1,6 +1,40 @@
+<div class="row ">
+    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" id="alineado">
+        <h1>Proyectos</h1>
+        <div id="alineado">
+            <button type="button" class="btn btn-outline-success" routerLink="/newproyec" *ngIf="isLogged">
+                Nuevo Proyecto
+            </button>
+        </div>
+    </div>
+
+    <ul class="col-lg-10 col-md-10 col-sm-12 card-group" id="alineado">
+        <li class="card"  id="exp-456" *ngFor="let proyecto of proyec">
+            <div class="text-center">
+                <div class="card-header">
+                    <h3>
+                        {{proyecto.titulo}}
+                    </h3>
+                    <div class="btn-group" role="group" id="bot-expe">
+                        <button class="btn btn-outline-info" routerLink="/editproyec/{{proyecto.id}}" *ngIf="isLogged"><i class="bi bi-pencil-square"></i></button>
+                        <button class="btn btn-outline-danger" (click)="delete(proyecto.id)" *ngIf="isLogged"><i class="bi bi-trash3-fill"></i></button>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <blockquote class="blockquote mb-0">
+                        <p>{{proyecto.descripcionP}}</p>
+                    </blockquote>
+                </div>
+            </div>
+        </li>
+    </ul>
+</div>
+
+<!--
+
 <div class="row">
   <h1>Proyectos</h1>
-  <!--clase contenedor actua como bloque-->
+
   <div class="contenedor">
 
     <div class="col-sm-12 col-md-7 col-lg-7 parte1">
@@ -15,3 +49,5 @@
 
   </div>
 </div>
+
+-->

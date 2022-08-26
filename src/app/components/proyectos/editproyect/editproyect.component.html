@@ -1,0 +1,23 @@
+<!--  <app-navegacion></app-navegacion> -->
+<div class="row p-4" style="background-color: rgba(245, 245, 245, 0)" *ngIf="proyect">
+    <div class="container col-lg-12" style="background-color: white;" >
+        <div class="card mx-auto text-center" style="width: 60%;" *ngIf="isLogged">
+            <div class="card-header">
+                <h1>Proyecto</h1>
+            </div>
+            <div class="card-body">
+                <form (ngSubmit)="onUpdate()" novalidate #f="ngForm" >
+                    <div>
+                        <label for="nombreE">Nombre del proyecto</label>
+                        <input type="text" class="form-control" id="nombreE" name="nombreE"  [(ngModel)]="proyect.titulo" required>
+                    </div>
+                    <div>
+                        <label for="descripcionE">descripcion del proyecto</label>
+                        <textarea name="descripcionE" iid="descripcionE"cols="30" rows="6" class="form-control"  [(ngModel)]="proyect.descripcionP" required></textarea>
+                    </div>
+                    <button class="btn btn-outline-success">Actualizar Proyect</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
