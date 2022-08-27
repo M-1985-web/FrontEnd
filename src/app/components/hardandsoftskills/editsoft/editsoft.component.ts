@@ -33,7 +33,7 @@ export class EditsoftComponent implements OnInit {
         this.skill = data;
       },
       (err) => {
-        alert('Error al encontrar  experiencia.');
+        alert('Error al encontrar Skills');
         this.router.navigate(['']);
       }
     );

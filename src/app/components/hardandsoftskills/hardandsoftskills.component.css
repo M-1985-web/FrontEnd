@@ -1,4 +1,9 @@
 .row {
-  background: #8cb4de;
+  background: #73aeee;
   padding: 20px;
+}
+
+h2 {
+  text-align: center;
+  margin-top: 25px;
 }

@@ -40,6 +40,7 @@ export class ProyectosComponent implements OnInit {
         (data) => {
           alert('se borro con exito el proyecto');
           this.router.navigate(['']);
+          
         },
         (err) => {
           alert('no se pudo eliminar el proyecto');
