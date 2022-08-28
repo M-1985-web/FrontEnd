@@ -1,1 +1,36 @@
-<p>edit-skill works!</p>
+
+
+<!--  <app-navegacion></app-navegacion> -->
+<div class="row p-4" style="background-color: rgba(245,245,245,0)">
+
+    <div class="container col-lg-12" style="background-color: white;">
+        <div class="card-123 mx-auto text-center" style="width: 30%;" *ngIf="isLogged">
+            <div class="card-header">
+                <label>
+                    <h1>Menú Skills</h1>
+                </label>
+            </div>
+            <div class="card-body">
+                <div id="alineado">
+                    <form (ngSubmit)="updatehard()" novalidate #f="ngForm">
+                        <div>
+                            <label for="nombreS">Nombre De la Skill</label>
+                            <input type="text" class="form-control" id="nombreS" name="nombreS"
+                            [(ngModel)]="skill.nombreS" required>
+                        </div>
+                        <div>
+                            <label for="capacidadS">Capacidad de manejo de la skill</label>
+                            <input type="number" class="form-control" id="capacidadS" name="capacidadS"
+                            [(ngModel)]="skill.capacidadS" required>
+                        </div>
+                        <div class="p-3">
+                            <button class="btn btn-outline-success">Actualizar Skill</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
