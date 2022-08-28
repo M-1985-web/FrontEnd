@@ -1,6 +1,7 @@
 .row {
   padding: 20px;
   background: #73aeee;
+  box-shadow: 2px -2px 5px #999;
 }
 
 .contenedor {
