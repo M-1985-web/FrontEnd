@@ -35,12 +35,14 @@ export class ProyectosComponent implements OnInit {
   }
 
   delete(id?: number) {
+
     if (id != undefined) {
       this.sProyecto.delete(id).subscribe(
         (data) => {
           alert('se borro con exito el proyecto');
+          this.cargarProyectos();
           this.router.navigate(['']);
-          
+
         },
         (err) => {
           alert('no se pudo eliminar el proyecto');
