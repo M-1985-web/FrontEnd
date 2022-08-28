@@ -12,7 +12,7 @@ div {
   #foto__perfil__mitad {
     position: absolute;
     width: 13%;
-    border-radius: 100%;
+    border-radius: 25%;
     /*esto le da una breve sombra left:1.5%;*/
     box-shadow: 3px 3px 3px grey;
     top: 460px;
