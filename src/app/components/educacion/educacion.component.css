@@ -1,12 +1,21 @@
 .row {
   padding: 20px;
-  box-shadow: 2px -2px 5px #00358e;
+  box-shadow: 2px -2px 5px #eef0f3;
 }
 
 div {
   background: #73aeee;
+  display: block;
 }
 
 h1, h3 {
   display: inline;
+}
+
+.education-block {
+    max-width: 700px;
+    margin: 0 auto 30px auto;
+    padding: 15px;
+    border: 1px solid #eef0f3;
+    text-align: left;
 }

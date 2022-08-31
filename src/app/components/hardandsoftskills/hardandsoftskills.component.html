@@ -2,19 +2,26 @@
     <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" id="alineado">
         <h1>Hard & Soft Skills</h1>
         <div>
-            <button type="button" class="btn btn-secondary" routerLink="/nuevaskill" *ngIf="isLogged">Crear nueva Hard & Soft Skills</button>
+            <button
+              type="button"
+              class="btn btn-success"
+              routerLink="/nuevaskill" *ngIf="isLogged">
+              <i class="bi bi-plus-lg"></i>
+            </button>
         </div>
 
     </div>
     <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" id="alineado">
-        <h2>Hard Skills</h2>
+        <h2>Hard-Skills</h2>
     </div>
 
     <!-- HardSkill -->
 
-    <ul class="col-sm-4 col-md-3 col-lg-3" *ngFor="let Skill of skill">
-            <li>
-                <div  id="skills alineado">
+    <!-- aca habia una ul -->
+    <div class="col-sm-4 col-md-3 col-lg-3" *ngFor="let Skill of skill">
+
+              <!-- aca una li -->
+                <div  id="skills alineado" class="skills-block">
                     <circle-progress
                         [percent]="Skill.capacidadS"
                         [radius]="80"
@@ -31,18 +38,19 @@
                     <button class="btn btn-primary" id="boton-skill" routerLink="/editskill/{{Skill.id}}" *ngIf="isLogged"><i class="bi bi-pencil"></i></button>
                     <button class="btn btn-danger" id="boton-skill" (click)="borrar(Skill.id)" *ngIf="isLogged"><i class="bi bi-trash"></i></button>
                 </div>
-            </li>
-    </ul>
+
+    </div>
 
     <!-- Soft -->
 
     <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" id="alineado">
-        <h2>Soft Skill</h2>
+        <h2>Soft-Skills</h2>
     </div>
 
-    <ul class="col-sm-4 col-md-3 col-lg-3" *ngFor="let softSkill of soft">
-            <li>
-                <div id="skills alineado">
+
+    <div class="col-sm-4 col-md-3 col-lg-3" *ngFor="let softSkill of soft">
+
+                <div id="skills alineado" class="skills-block">
                     <circle-progress
                     [percent]="softSkill.capacidadS"
                     [radius]="80"
@@ -59,8 +67,9 @@
                     <button class="btn btn-primary" id="boton-skill" routerLink="/editsoft/{{softSkill.id}}" *ngIf="isLogged"><i class="bi bi-pencil"></i></button>
                     <button class="btn btn-danger" id="boton-skill" (click)="borrarsoft(softSkill.id)" *ngIf="isLogged"><i class="bi bi-trash"></i></button>
                 </div>
-            </li>
-    </ul>
+
+              </div>
+
 
 </div>
 

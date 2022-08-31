@@ -3,16 +3,15 @@
   <div class="col-lg-2">
     <button
       type="button"
-      class="btn btn-secondary"
+      class="btn btn-success"
       routerLink="/newproyec"
       *ngIf="isLogged"
-    >
-      Crear Nuevo Proyecto
+    ><i class="bi bi-plus-lg"></i>
     </button>
   </div>
 
   <div class="col-lg-1"></div>
-  <div class="col-lg-11">
+  <div class="col-lg-11 proyecto-block">
     <table class="table">
       <tbody>
         <tr *ngFor="let proyecto of proyec">
