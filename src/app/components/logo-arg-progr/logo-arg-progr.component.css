@@ -20,3 +20,30 @@ img {
 .btn {
   border-width: medium;
 }
+
+
+/*RESPONSIVE*/
+
+@media screen and (max-width: 425px){
+  .noresponsive {
+    display: none;
+  }
+}
+
+
+@media screen and (max-width: 376px){
+  .noresponsive {
+    display: none;
+  }
+}
+
+
+@media screen and (max-width: 320px){
+  .noresponsive {
+    display: none;
+  }
+
+  .redeSocialesGitLink {
+     display: none;
+  }
+}

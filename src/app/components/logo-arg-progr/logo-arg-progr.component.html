@@ -3,11 +3,12 @@
 
     <div class="logos">
       <img src="../../../assets/APLogo.png" alt="logo de argentina programa" class="logo__arg--progr">
+      <img src="../../../assets/logoInti.png" alt="logo de Inti y Ministerio de Desarrollo" class="logo__arg--progr noresponsive">
     </div>
 
     <div class="redeSociales">
-      <a href="https://www.linkedin.com/in/mart%C3%ADn-marcelo-maldonado-2851051b2/"><img src="../../../assets/linkedin.png" alt="red social.."></a>
-      <a href="https://github.com/M-1985-web"><img src="../../../assets/github.png" alt="red social.."></a>
+      <a href="https://www.linkedin.com/in/mart%C3%ADn-marcelo-maldonado-2851051b2/"><img src="../../../assets/linkedin.png" alt="red social.." class="redeSocialesGitLink"></a>
+      <a href="https://github.com/M-1985-web"><img src="../../../assets/github.png" alt="red social.." class="redeSocialesGitLink"></a>
       <button type="button" class="btn btn-outline-light" (click)="login()" *ngIf="!isLogged">Ingresar</button>
       <button type="button" class="btn btn-outline-light" (click)="onLogOut()
       " *ngIf="isLogged">Cerrar Sesion</button>
