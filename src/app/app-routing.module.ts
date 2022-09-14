@@ -21,7 +21,6 @@ const routes: Routes = [
   { path: 'nuevaedu', component: NuevaEducacionComponent },
   { path: 'nuevaskill', component: NewskillComponent },
   // -- Editar exits -- //
-
   { path: 'editexp/:id', component: EditExperienciaComponent },
   { path: 'editedu/:id', component: EditarEducacionComponent },
   { path: 'editproyec/:id', component: EditproyectComponent },

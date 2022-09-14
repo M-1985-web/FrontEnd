@@ -7,33 +7,35 @@ import { Experiencia } from '../model/experiencia';
   providedIn: 'root',
 })
 export class SExperienciaService {
-    expURL = 'http://localhost:8080/explab/';
-   //expURL = 'https://backendmmm.herokuapp.com/explab/';
+    URL = 'http://localhost:8080/explab/';
+   //private URL = 'https://backendmmm.herokuapp.com/explab/';
 
   constructor(private httpClient: HttpClient) {}
 
   //es un array de experiencia primer metodo
+  //cambio this.expURL local
+  //por this.URL produccion
   public lista(): Observable<Experiencia[]> {
-    return this.httpClient.get<Experiencia[]>(this.expURL + 'lista');
+    return this.httpClient.get<Experiencia[]>(this.URL + 'lista');
   }
 
   //segundo metodo
   public detail(id: number): Observable<Experiencia> {
-    return this.httpClient.get<Experiencia>(this.expURL + `detail/${id}`);
+    return this.httpClient.get<Experiencia>(this.URL + `detail/${id}`);
   }
 
   //metodo guardar y crear un nuevo registro en bd
   public save(experiencia: Experiencia): Observable<any> {
-    return this.httpClient.post<any>(this.expURL + 'create', experiencia);
+    return this.httpClient.post<any>(this.URL + 'create', experiencia);
   }
 
   //metodo para actualizar , poner
   public update(id: number, experiencia: Experiencia): Observable<any> {
-    return this.httpClient.put<any>(this.expURL + `update/${id}`, experiencia);
+    return this.httpClient.put<any>(this.URL + `update/${id}`, experiencia);
   }
 
   //metodo borrar
   public delete(id: number): Observable<any> {
-    return this.httpClient.delete<any>(this.expURL + `delete/${id}`);
+    return this.httpClient.delete<any>(this.URL + `delete/${id}`);
   }
 }

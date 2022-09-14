@@ -8,6 +8,8 @@ const AUTHORITIES_KEY = 'AuthAuthorities';
   providedIn: 'root',
 })
 export class TokenService {
+
+  
   roles: Array<string> = [];
 
   constructor() {}
