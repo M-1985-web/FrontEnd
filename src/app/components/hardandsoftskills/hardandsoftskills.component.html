@@ -20,7 +20,7 @@
     <!-- HardSkill -->
 
     <!-- aca habia una ul -->
-    <div class="col-sm-4 col-md-3 col-lg-3 circle" *ngFor="let Skill of skill">
+    <div class="col-sm-4 col-md-6 col-lg-3" *ngFor="let Skill of skill">
 
               <!-- aca una li -->
                 <div  id="skills alineado">
@@ -50,9 +50,9 @@
     </div>
 
 
-    <div class="col-sm-4 col-md-3 col-lg-3 circle" *ngFor="let softSkill of soft">
+    <div class="col-sm-4 col-md-6 col-lg-3" *ngFor="let softSkill of soft">
 
-                <div id="skills alineado" class="skills-block">
+                <div id="skills alineado">
                     <circle-progress
                     [percent]="softSkill.capacidadS"
                     [radius]="80"

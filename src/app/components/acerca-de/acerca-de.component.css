@@ -66,6 +66,62 @@ div {
 
 }
 
+@media (min-width: 768px ){
+  #foto__perfil__mitad {
+    position: absolute;
+    width: 16%;
+    border-radius: 100%;
+    /*esto le da una breve sombra*/
+    box-shadow: 3px 3px 3px grey;
+    left:2%;
+    top: 530px;
+  }
+
+}
+
+
+
+
+
+
+@media (min-width: 951px ){
+  #foto__perfil__mitad {
+    position: absolute;
+    width: 15%;
+    border-radius: 20%;
+    /*esto le da una breve sombra*/
+    box-shadow: 3px 3px 3px grey;
+    left:2%;
+    top: 500px;
+  }
+
+}
+
+@media (min-width: 1440px ){
+  #foto__perfil__mitad {
+    position: absolute;
+    width: 13%;
+    border-radius: 20%;
+    /*esto le da una breve sombra*/
+    box-shadow: 3px 3px 3px grey;
+    left:2%;
+    top: 500px;
+  }
+
+}
+
+@media (min-width: 2560px ){
+  #foto__perfil__mitad {
+    position: absolute;
+    width: 10%;
+    border-radius: 100%;
+    /*esto le da una breve sombra*/
+    box-shadow: 3px 3px 3px grey;
+    left:7%;
+    top: 400px;
+  }
+
+}
 
 
 

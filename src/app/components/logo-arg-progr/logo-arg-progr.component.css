@@ -31,10 +31,16 @@ img {
 }
 
 
-@media screen and (max-width: 376px){
+@media screen and (max-width: 375px){
   .noresponsive {
     display: none;
   }
+
+  .redeSocialesGitLink {
+   display: none;
+  }
+
+
 }
 
 
