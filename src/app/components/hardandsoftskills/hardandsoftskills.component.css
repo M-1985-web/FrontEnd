@@ -9,8 +9,14 @@ h2 {
   margin-top: 25px;
 }
 
+.circle {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
-/* 
+
+/*
 
 .skills-block {
     max-width: 700px;
