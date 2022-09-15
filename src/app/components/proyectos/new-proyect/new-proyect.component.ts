@@ -12,7 +12,7 @@ import { TokenService } from 'src/app/service/token.service';
 export class NewProyectComponent implements OnInit {
   titulo: string;
   PDescripcion: string;
-  img: string;
+  img: string = '../../../../assets/proyectos/barberiaAlura.png';
   isLogged = false;
 
   constructor(
@@ -30,10 +30,15 @@ export class NewProyectComponent implements OnInit {
   }
 
   onCreate() {
-    const proyect = new Proyecto(this.titulo, this.PDescripcion, this.img);
+    const proyect = new Proyecto(
+      this.titulo,
+      this.PDescripcion,
+      this.img
+    );
+
     this.proyec.save(proyect).subscribe(
       (data) => {
-        alert('Proyecto agregado con exito');
+        alert('Proyecto agregado con exito!!');
         this.router.navigate(['']);
       },
       (err) => {
@@ -42,7 +47,4 @@ export class NewProyectComponent implements OnInit {
       }
     );
   }
-
-
-  
 }

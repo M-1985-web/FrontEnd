@@ -1,38 +1,113 @@
-<div class="container" *ngIf="expLab" >
+<!--  <app-navegacion></app-navegacion> -->
+<div
+  class="row p-4"
+  style="background-color: rgba(245, 245, 245, 0)"
+  *ngIf="experiencia">
+  <div
+    class="container col-lg-12"
+    style="background-color:white">
+    <div
+      class="card mx-auto text-center"
+      style="width: 60%"
+      *ngIf="isLogged">
+      <div class="card-header">
+        <h1>Proyecto</h1>
+      </div>
+      <div class="card-body">
+        <form (ngSubmit)="onUpdate()" novalidate #f="ngForm">
+          <div>
+            <label
+              for="nombreE">Editar: Nombre del proyecto
+            </label>
+            <input
+              type="text"
+              class="form-control"
+              id="nombreE"
+              name="nombreE"
+              [(ngModel)]="experiencia.nombreE"
+              required
+            />
+          </div>
+          <div>
+            <label
+              for="descripcionE"
+              >Editar: descripcion del Trabajo u experiencia
+            </label>
+            <textarea
+              name="descripcionE"
+              id="descripcionE"
+              cols="30"
+              rows="6"
+              class="form-control"
+              [(ngModel)]="experiencia.descripcionE"
+              required
+            ></textarea>
+          </div>
+          <!--IMAGEN PROYECTO-->
+          <div>
+            <label
+              for="imgE" class="form-label">Editar: Imagen
+              Proyecto (link completo como en el ejemplo):
+            </label>
+            <input
+              type="text"
+              required
+              class="form-control"
+              id="imgE"
+              name="imgE"
+              [(ngModel)]="experiencia.imgE"
+            />
+          </div>
+
+<!--
+<div class="container" *ngIf="experiencia">
   <div class="row">
     <div>
       <form (ngSubmit)="onUpdate()" novalidate #f="ngForm">
         <div class="form-group">
           <label for="nombreE">
-            Nombre de la Empresa
+            Nombre de la nueva Empresa que desea crear
           </label>
-          <input 
-            type="text" 
-            class="form-control" 
-            id="nombreE" 
-            name="nombreE" 
-            [(ngModel)] ="expLab.nombreE" 
+          <input
+            type="text"
+            class="form-control"
+            id="nombreE"
+            name="nombreE"
+            [(ngModel)]="experiencia.nombreE"
             required
-          >
+          />
         </div>
         <div class="form-group">
           <label for="descripcionE">
             Descripcion de la tarea realizada en la empresa
           </label>
-          <input 
-            type="text" 
-            class="form-control" 
-            id="descripcionE" 
-            name="descripcionE" 
-            [(ngModel)] ="expLab.descripcionE" 
+          <input
+            type="text"
+            class="form-control"
+            id="descripcionE"
+            name="descripcionE"
+            [(ngModel)]="experiencia.descripcionE"
             required
-          >
+          />
         </div>
-        <button class="btn btn-info">
-          Actualizar experiencia
-        </button>
+  -->
+        <!--IMAGEN exp
+        <div>
+          <label for="img" class="form-label">Editar: Imagen Experiencia (agregar link):</label>
+          <input
+            type="text"
+            required
+            class="form-control"
+            id="imgE"
+            name="imgE"
+            [(ngModel)]="experiencia.imgE"
+          />
+        </div>
+        -->
+        <!--BOTON
+        <button class="btn btn-info">Actualizar experiencia</button>
       </form>
     </div>
   </div>
 </div>
-
+-->

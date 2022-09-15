@@ -12,10 +12,16 @@
 
   <div class="col-lg-1"></div>
   <div class="col-lg-11 proyecto-block">
+
     <table class="table">
       <tbody>
         <tr *ngFor="let proyecto of proyec">
           <td>
+            <img
+              class="card-img-top img-responsive img-thumbnail"
+              src="{{ proyecto.img }}"
+              alt="Imagen {{ proyecto.titulo }}"
+            />
             <h4>{{ proyecto.titulo }}</h4>
             <p>{{ proyecto.descripcionP }}</p>
           </td>
@@ -39,6 +45,17 @@
     </table>
   </div>
 </div>
+
+
+<!--
+  <a
+    href="{{ proyecto.link }}"
+    target="_blank"
+    class="btn btn-outline-dark"
+    >Ver proyecto <i class="bi
+    bi-arrow-right-square-fill"></i
+  ></a>
+-->
 
 
 <!--

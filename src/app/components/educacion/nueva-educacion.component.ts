@@ -11,6 +11,8 @@ import { EducacionService } from 'src/app/service/educacion.service';
 export class NuevaEducacionComponent implements OnInit {
   nombreEdu: string;
   descripcionEdu: string;
+  imgEdu: string = '../../../assets/educacion/in-logo.png';
+  isLogged = false;
 
   constructor(
     private educacionService: EducacionService,
@@ -20,7 +22,11 @@ export class NuevaEducacionComponent implements OnInit {
   ngOnInit(): void {}
 
   onCreate(): void {
-    const educacion = new Educacion(this.nombreEdu, this.descripcionEdu);
+    const educacion = new Educacion(
+      this.nombreEdu,
+      this.descripcionEdu,
+      this.imgEdu
+    );
     this.educacionService.save(educacion).subscribe(
       (data) => {
         alert('Educacion añadida correctamente');
@@ -32,7 +38,5 @@ export class NuevaEducacionComponent implements OnInit {
         this.router.navigate(['']);
       }
     );
-
-
   }
 }

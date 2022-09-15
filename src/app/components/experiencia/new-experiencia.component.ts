@@ -9,8 +9,10 @@ import { SExperienciaService } from 'src/app/service/s-experiencia.service';
   styleUrls: ['./new-experiencia.component.css'],
 })
 export class NewExperienciaComponent implements OnInit {
-  nombreE: string = '';
-  descripcionE: string = '';
+  nombreE: string;
+  descripcionE: string;
+  imgE: string = '../../../assets/experiencia/6argprogr-logo.png';
+  isLogged = false;
 
   constructor(
     private sExperiencia: SExperienciaService,
@@ -20,7 +22,11 @@ export class NewExperienciaComponent implements OnInit {
   ngOnInit(): void {}
 
   onCreate(): void {
-    const expe = new Experiencia(this.nombreE, this.descripcionE);
+    const expe = new Experiencia(
+      this.nombreE,
+      this.descripcionE,
+      this.imgE
+    );
     this.sExperiencia.save(expe).subscribe(
       (data) => {
         alert('Experiencia Añadida correctamente');

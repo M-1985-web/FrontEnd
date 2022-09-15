@@ -7,8 +7,8 @@ import { Experiencia } from '../model/experiencia';
   providedIn: 'root',
 })
 export class SExperienciaService {
-    URL = 'http://localhost:8080/explab/';
-   //private URL = 'https://backendmmm.herokuapp.com/explab/';
+  URL = 'http://localhost:8080/experiencia/';
+  //private URL = 'https://backendmmm.herokuapp.com/explab/';
 
   constructor(private httpClient: HttpClient) {}
 
@@ -25,12 +25,12 @@ export class SExperienciaService {
   }
 
   //metodo guardar y crear un nuevo registro en bd
-  public save(experiencia: Experiencia): Observable<any> {
+  public save(experiencia: Experiencia): Observable<Experiencia> {
     return this.httpClient.post<any>(this.URL + 'create', experiencia);
   }
 
   //metodo para actualizar , poner
-  public update(id: number, experiencia: Experiencia): Observable<any> {
+  public update(id: number, experiencia: Experiencia): Observable<Experiencia> {
     return this.httpClient.put<any>(this.URL + `update/${id}`, experiencia);
   }
 

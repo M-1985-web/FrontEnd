@@ -22,3 +22,7 @@ h1, h3 {
 
 }
 
+img{
+    max-width: 80%;
+    align-self: center;
+}

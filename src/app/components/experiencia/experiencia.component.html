@@ -6,7 +6,8 @@
       class="btn btn-success"
       routerLink="/nuevaexp"
       *ngIf="isLogged"
-    ><i class="bi bi-plus-lg"></i>
+    >
+      <i class="bi bi-plus-lg"></i>
     </button>
   </div>
 
@@ -16,8 +17,14 @@
       <tbody>
         <tr *ngFor="let Experiencia of expe">
           <td>
+            <img
+              class="card-img-top img-responsive img-thumbnail img"
+              src="{{ Experiencia.imgE }}"
+              alt="Imagen {{ Experiencia.nombreE }}"
+            />
             <h4>{{ Experiencia.nombreE }}</h4>
             <p>{{ Experiencia.descripcionE }}</p>
+
           </td>
 
           <td *ngIf="isLogged">

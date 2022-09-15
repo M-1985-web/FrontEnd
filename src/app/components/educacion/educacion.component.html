@@ -6,16 +6,22 @@
       class="btn btn-success"
       routerLink="/nuevaedu"
       *ngIf="isLogged"
-    ><i class="bi bi-plus-lg"></i>
+    >
+      <i class="bi bi-plus-lg"></i>
     </button>
   </div>
 
   <div class="col-lg-1"></div>
-  <div class="col-lg-11 education-block" >
+  <div class="col-lg-11 education-block">
     <table class="table">
       <tbody>
         <tr *ngFor="let Educacion of educacion">
           <td>
+            <img
+              class="card-img-top img-responsive img-thumbnail"
+              src="{{ Educacion.imgEdu }}"
+              alt="Imagen {{ Educacion.nombreEdu }}"
+            />
             <h4>{{ Educacion.nombreEdu }}</h4>
             <p>{{ Educacion.descripcionEdu }}</p>
           </td>
@@ -39,4 +45,3 @@
     </table>
   </div>
 </div>
-

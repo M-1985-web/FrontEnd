@@ -21,13 +21,15 @@ export class SProyectoService {
     return this.httpClient.get<Proyecto>(this.URL + `buscar/${id}`);
   }
 
-  public save(proyec: Proyecto): Observable<any> {
+  public save(proyec: Proyecto): Observable<Proyecto> {
     return this.httpClient.post<any>(this.URL + 'create', proyec);
   }
+
+  public update(id: number, proyec: Proyecto): Observable<Proyecto> {
+    return this.httpClient.put<any>(this.URL + `update/${id}`, proyec);
+  }
+
   public delete(id: number): Observable<any> {
     return this.httpClient.delete<any>(this.URL + `delete/${id}`);
-  }
-  public update(id: number, proyec: Proyecto): Observable<any> {
-    return this.httpClient.put<any>(this.URL + `update/${id}`, proyec);
   }
 }
