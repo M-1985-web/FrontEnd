@@ -6,10 +6,9 @@
 ## Caracteristicas generales del Proyecto 
 
 * Aplicación web full stack de `Portfolio`
-* Tecnologías `Front-End`: HTML5, CSS3, BootsTrap, Angular, 
-Firebase.
-* Herramientas adicionales: Apache TomCats, PHPAdmin, XAMPP, 
-Postman.
+* Tecnologías `Front-End`: 
+* `HTML5`, `CSS3`, `BootsTrap`, `Angular`, `Firebase`.
+* Herramientas adicionales: `Apache TomCat`, `phpMyAdmin`, `XAMPP`, `Postman`.
 * Contiene una `Arquitectura Distribuida` con diseño de 
 interfaz (front end) que muestra la información agregada por el 
 usuario.
@@ -17,20 +16,17 @@ usuario.
 los datos de los diferentes componentes `Angular`.
 * cuenta con `APIs` como `Sprint Boot` para proveer a través de 
 internet la información (back end).
-* Tecnologías `Back-End`: Sprint Boot, Java, Heroku.
-* Sistema de seguridad JSON Web Token `(JWT)`
+* Tecnologías `Back-End`: `Sprint Boot`, `Java V.17`, `Heroku`.
+* Sistema de `Login` con seguridad JSON Web Token `(JWT)`
 
 
 
 ## Contenido
 
 - [Setup and Configuration](#setup-and-configuration)
-    - [Making Edits / Customizing the Template]
-(#making-edits--customizing-the-template)
-    - [Using the Template As Is]
-(#using-the-template-as-is)
-- [Customization and Editing]
-(#customization-and-editing)
+    - [Making Edits / Customizing the Template](#making-edits--customizing-the-template)
+    - [Using the Template As Is](#using-the-template-as-is)
+- [Customization and Editing](#customization-and-editing)
     - [General](#general)
     - [Images](#images)
     - [Header Section](#header-section)
