@@ -2,64 +2,56 @@
 <div
   class="row p-4"
   style="background-color: rgba(245, 245, 245, 0)"
-  *ngIf="experiencia">
-  <div
-    class="container col-lg-12"
-    style="background-color:white">
-    <div
-      class="card mx-auto text-center"
-      style="width: 60%"
-      *ngIf="isLogged">
+  *ngIf="experiencia"
+>
+  <div class="container col-lg-12" style="background-color: white">
+    <div class="card mx-auto text-center" style="width: 60%" *ngIf="isLogged">
       <div class="card-header">
         <h1>Proyecto</h1>
       </div>
       <div class="card-body">
         <form (ngSubmit)="onUpdate()" novalidate #f="ngForm">
           <div>
-            <label
-              for="nombreE">Editar: Nombre del proyecto
-            </label>
+            <label for="nombreExperiencia">Editar: Nombre del proyecto </label>
             <input
               type="text"
               class="form-control"
-              id="nombreE"
-              name="nombreE"
-              [(ngModel)]="experiencia.nombreE"
+              id="nombreExperiencia"
+              name="nombreExperiencia"
+              [(ngModel)]="experiencia.nombreExperiencia"
               required
             />
           </div>
           <div>
-            <label
-              for="descripcionE"
+            <label for="descripcionExperiencia"
               >Editar: descripcion del Trabajo u experiencia
             </label>
             <textarea
-              name="descripcionE"
-              id="descripcionE"
+              name="descripcionExperiencia"
+              id="descripcionExperiencia"
               cols="30"
               rows="6"
               class="form-control"
-              [(ngModel)]="experiencia.descripcionE"
+              [(ngModel)]="experiencia.descripcionExperiencia"
               required
             ></textarea>
           </div>
           <!--IMAGEN PROYECTO-->
           <div>
-            <label
-              for="imgE" class="form-label">Editar: Imagen
-              Proyecto (link completo como en el ejemplo):
+            <label for="imgExperiencia" class="form-label"
+              >Editar: Imagen Proyecto (link completo como en el ejemplo):
             </label>
             <input
               type="text"
               required
               class="form-control"
-              id="imgE"
-              name="imgE"
-              [(ngModel)]="experiencia.imgE"
+              id="imgExperiencia"
+              name="imgExperiencia"
+              [(ngModel)]="experiencia.imgExperiencia"
             />
           </div>
 
-<!--
+          <!--
 <div class="container" *ngIf="experiencia">
   <div class="row">
     <div>
@@ -91,7 +83,7 @@
           />
         </div>
   -->
-        <!--IMAGEN exp
+          <!--IMAGEN exp
         <div>
           <label for="img" class="form-label">Editar: Imagen Experiencia (agregar link):</label>
           <input
@@ -104,10 +96,18 @@
           />
         </div>
         -->
-        <!--BOTON
+          <!--BOTON
         <button class="btn btn-info">Actualizar experiencia</button>
       </form>
     </div>
   </div>
 </div>
 -->
+          <button class="btn btn-info">Actualizar 
+            experiencia
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
