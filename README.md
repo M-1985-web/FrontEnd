@@ -49,6 +49,7 @@ internet la información (back end).
     - [Logo-arg-progr](#logo-arg-progr)
     - [Proyectos](#proyectos)
 - [Entorno de prueba](#entorno-de-prueba)
+- [Base de datos](#base-de-datos)
 - [Ide's](#ides)
     - [Ide Front](#ide-front)
     - [Ide Back](#ide-back)
@@ -215,6 +216,10 @@ class="img-fluid" id="foto__perfil__mitad">
 [Postman](https://www.postman.com/product/graphql-client/)
 
 [XAMPP](https://www.apachefriends.org/es/index.html)
+
+## Base de datos
+
+
 
 
 # Ides  🚀
