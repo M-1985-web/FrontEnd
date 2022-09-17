@@ -54,6 +54,7 @@ internet la información (back end).
     - [Ide Back](#ide-back)
 - [Lenguaje BackEnd](#lenguaje-backend)
 - [Entorno BackEnd](#entorno-backend)
+- [Ambiente de prueba](#ambiente-de-prueba)
 - [Licencia](#licencia)
 
 ## Instalación y configuración 🚀
@@ -207,6 +208,9 @@ class="img-fluid" id="foto__perfil__mitad">
 [Firebase](https://firebase.google.com/)
 
 [Heroku](https://id.heroku.com/)
+
+
+# Ambiente de prueba
 
 
 ## Licencia 🚀
