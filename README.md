@@ -29,7 +29,7 @@ internet la información (back end).
 ## Contenido
 
 - [Instalación y configuración](#instalación-y-configuración)
-    - [Angular](#angular)
+    - [Entorno](#entorno)
     - [Comandos](#comandos)
 - [La app se divide en](#la-app-se-divide-en)
     - [Acerca de](#acerca-de)
@@ -47,7 +47,7 @@ internet la información (back end).
 
 ## Instalación y configuración
 
-## Angular
+## Entorno
 
 1. https://angular.io/
 2. Este proyecto fue generado con [Angular CLI](https://github.com/angular/angular-cli) versión 14.0.5.
@@ -119,7 +119,8 @@ Proyecto de los que fuiste parte y desarrollaste.
 
 
 # Componente Acerca De
-### 🚀Lo unico que traigo de forma automatica es el nombre y el apellido a traves de Postman, no aplica dinamismo.🚀
+
+### 🚀Lo unico que traigo de forma manual es el nombre y el apellido a traves de Postman, no aplica dinamismo.🚀
 
 
 ```HTML
@@ -140,12 +141,7 @@ class="img-fluid" id="foto__perfil__mitad">
     <span>
       <h1>Acerca de</h1>
       <p>Empecé mi trayectoria en el sector Retail, en empresas especializadas en la 
-comercialización masiva de productos y servicios. Responsable de la ejecución 
-de las actividades comerciales del área, como atención al cliente y ventas. 
-Actualmente, estudio y desarrollo pequeños proyectos como páginas Web y Apps. 
-Aprender hace parte de mi día a día y los desafíos me motivan a encontrar las 
-mejores soluciones. Busco adquirir experiencia en el área de Tecnología de la 
-información.</p>
+        comercialización masiva de productos y servicios. Responsable de la ejecución de las actividades comerciales del área, como atención al cliente y ventas. Actualmente, estudio y desarrollo pequeños proyectos como páginas Web y Apps. Aprender hace parte de mi día a día y los desafíos me motivan a encontrar las mejores soluciones. Busco adquirir experiencia en el área de Tecnología de la información.</p>
     </span>
   </div>
 
@@ -155,8 +151,11 @@ información.</p>
 
 
 ## Ides
+
 [Visual Studio Code](https://code.visualstudio.com/)
+
 [IntelliJ IDEA](https://www.jetbrains.com/es-es/idea/)
+
 [Java v.17](https://www.oracle.com/java/technologies/javase/jdk17-archive-downloads.html)
 
 
