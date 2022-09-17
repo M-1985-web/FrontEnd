@@ -228,8 +228,13 @@ class="img-fluid" id="foto__perfil__mitad">
 
 ![MySQL Workbench](https://github.com/M-1985-web/FrontEnd/blob/master/src/assets/readmeFront/MySQL%20Workbench.png)
 
+[MySQL Workbench](https://dev.mysql.com/downloads/workbench/)
+
+
+
 ![phpMyAdmin](https://github.com/M-1985-web/FrontEnd/blob/master/src/assets/readmeFront/phpMyAdmin.png)
 
+[phpMyAdmin](https://www.phpmyadmin.net/)
 
 # Ides  🚀
 
