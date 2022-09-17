@@ -212,6 +212,17 @@ class="img-fluid" id="foto__perfil__mitad">
 
 # Ambiente de prueba
 
+![ng serve-o](https://github.com/M-1985-web/FrontEnd/blob/master/src/assets/readmeFront/ngserve-o.png)
+
+
+![IntelliJ](https://github.com/M-1985-web/FrontEnd/blob/master/src/assets/readmeFront/intellJ.png)
+
+
+![XAMPP](https://github.com/M-1985-web/FrontEnd/blob/master/src/assets/readmeFront/xampp.png)
+
+
+![Postman](https://github.com/M-1985-web/FrontEnd/blob/master/src/assets/readmeFront/postman.png)
+
 
 ## Licencia 🚀
 
