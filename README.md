@@ -29,6 +29,8 @@ internet la información (back end).
 * Sistema de `Login` con seguridad JSON Web Token `(JWT)`
 * `Una vez logueado puede editar lo componentes`: Experiencia, Educacion, Skills, Proyectos.
 * `SCRUM`, para gestionar el tiempo de desarrollo.
+* `CRUD`, una vez logueado por editar, borrar o crear en los diferentes componentes.
+* `IMAGENES`, las imagenes las trae desde las carpeta `Assets` del proyecto.
 
 
 
