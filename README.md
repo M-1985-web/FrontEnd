@@ -19,7 +19,7 @@ los datos de los diferentes componentes `Angular`.
 * `DER` (diseño conceptual), Modelo Relacional (diseño lógico) y diseño físico la base de datos en MYSQL 
 * cuenta con `APIs` como `Sprint Boot` para proveer a través de 
 internet la información (back end).
-* Tecnologías `Back-End`: `Sprint Boot`, `Java V.17`, `Heroku`.
+* Tecnologías `Back-End`: `Spring-Boot`, `Java v.17`, `Clever Cloud`,  `Heroku`.
 * Sistema de `Login` con seguridad JSON Web Token `(JWT)`
 * `Una vez logueado puede editar lo componentes`: Experiencia, Educacion, Skills, Proyectos.
 * `SCRUM`, para gestionar el tiempo de desarrollo.
@@ -42,6 +42,7 @@ internet la información (back end).
     - [Login](#login)
     - [Logo-arg-progr](#logo-arg-progr)
     - [Proyectos](#proyectos)
+- [Ide's](#ides)
 - [Licencia](#licencia)
 
 ## Instalación y configuración
@@ -52,6 +53,11 @@ internet la información (back end).
 2. Este proyecto fue generado con [Angular CLI](https://github.com/angular/angular-cli) versión 14.0.5.
 3. también debes tener instalado [NodeJs](https://nodejs.org/en/download/)
 4. NodeJs ya te instala los paquetes npm necesarios.
+5. [Spring-Boot](https://start.spring.io/)
+5. `Web Servers`:
+6. [Firebase](https://firebase.google.com/)
+7. [Heroku](https://id.heroku.com/)
+8. [Clever Cloud](https://www.clever-cloud.com/)
 
 ## Comandos
 
@@ -146,6 +152,12 @@ información.</p>
 </div>
 
 ```
+
+
+## Ides
+[Visual Studio Code](https://code.visualstudio.com/)
+[IntelliJ IDEA](https://www.jetbrains.com/es-es/idea/)
+[Java v.17](https://www.oracle.com/java/technologies/javase/jdk17-archive-downloads.html)
 
 
 
