@@ -99,17 +99,25 @@ Breve descripcion personal o lo que creas que sea importante transmitir. Informa
 
 profesional resumida sobre vos.
 
+![Acerca de](https://github.com/M-1985-web/FrontEnd/blob/master/src/assets/readmeFront/acercade.png)
+
 ### Banner
 
 un Banner que represente la idea principal que queres transmitir.
+
+![Banner](https://github.com/M-1985-web/FrontEnd/blob/master/src/assets/readmeFront/banner.png)
 
 ### Educacion
 
 Información Academica, certificaciones, cursos.
 
+![Educacion](https://github.com/M-1985-web/FrontEnd/blob/master/src/assets/readmeFront/educacion.png)
+
 ### Experiencia
 
 Informacion de trayectoria laboral.
+
+![Experiencia](https://github.com/M-1985-web/FrontEnd/blob/master/src/assets/readmeFront/experiencia.png)
 
 ### HardandsoftSkills
 
@@ -117,9 +125,14 @@ Habilidades tecnologicas y habilidades blandas, como por ejemplo la comunicació
 
 efectiva. Visualizado con porcentajes para ver el grado de dominio de cada una.
 
+![HardandsoftSkills](https://github.com/M-1985-web/FrontEnd/blob/master/src/assets/readmeFront/hys.png)
+
 ### Header
 
 En la parte superior izquierda, debe contener un logo y nombre dle programa.
+
+
+![Header](https://github.com/M-1985-web/FrontEnd/blob/master/src/assets/readmeFront/logo.png)
 
 ### Home
 
@@ -133,13 +146,33 @@ password. Una vez logueado el usuario puede editar los componentes Experiencia,
 
 Educacion, Skills y Proyectos.
 
+![Login](https://github.com/M-1985-web/FrontEnd/blob/master/src/assets/readmeFront/login.png)
+
+![Login2](https://github.com/M-1985-web/FrontEnd/blob/master/src/assets/readmeFront/login2.png)
+
+![Login3](https://github.com/M-1985-web/FrontEnd/blob/master/src/assets/readmeFront/login3.png)
+
+![Login4](https://github.com/M-1985-web/FrontEnd/blob/master/src/assets/readmeFront/login4.png)
+
+![Login5](https://github.com/M-1985-web/FrontEnd/blob/master/src/assets/readmeFront/login5.png)
+
+![Login6](https://github.com/M-1985-web/FrontEnd/blob/master/src/assets/readmeFront/login6.png)
+
+
+
+
 ### Logo-arg-progr
 
 Logo de la institución.
 
+
+![Header](https://github.com/M-1985-web/FrontEnd/blob/master/src/assets/readmeFront/logo.png)
+
 ### Proyectos
 
 Proyecto de los que fuiste parte y desarrollaste.
+
+![Proyectos](https://github.com/M-1985-web/FrontEnd/blob/master/src/assets/readmeFront/proyectos.png)
 
 
 
@@ -212,14 +245,22 @@ class="img-fluid" id="foto__perfil__mitad">
 
 # Ambiente de prueba
 
+### Visual Studio Code
+
 ![ng serve-o](https://github.com/M-1985-web/FrontEnd/blob/master/src/assets/readmeFront/ngserve-o.png)
 
+
+### IntelliJ IDEA
 
 ![IntelliJ](https://github.com/M-1985-web/FrontEnd/blob/master/src/assets/readmeFront/intellJ.png)
 
 
+### XAMPP
+
 ![XAMPP](https://github.com/M-1985-web/FrontEnd/blob/master/src/assets/readmeFront/xampp.png)
 
+
+### Postman
 
 ![Postman](https://github.com/M-1985-web/FrontEnd/blob/master/src/assets/readmeFront/postman.png)
 
