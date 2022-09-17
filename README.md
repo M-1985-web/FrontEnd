@@ -1,11 +1,11 @@
-# Proyecto Integrador Argentina Programa 
-# FrontEnd
-# Maldonado Martin
+# Proyecto Integrador Argentina Programa 🚀
+# FrontEnd 🚀
+# Maldonado Martin 🚀
 
 
 ## Caracteristicas generales del Proyecto 
 
-* Aplicación web full stack de `Portfolio`
+* Aplicación de `Portfolio` web full stack dinámica.
 * Tecnologías `Front-End`: 
 * `HTML5`, `CSS3`, `BootsTrap`,`TypeScript`, `Angular`, `Firebase`.
 * Herramientas adicionales: `Apache TomCat`, `phpMyAdmin`, `XAMPP`, `Postman`.
@@ -21,6 +21,7 @@ los datos de los diferentes componentes `Angular`.
 internet la información (back end).
 * Tecnologías `Back-End`: `Sprint Boot`, `Java V.17`, `Heroku`.
 * Sistema de `Login` con seguridad JSON Web Token `(JWT)`
+* `Una vez logueado puede editar lo componentes`: Experiencia, Educacion, Skills, Proyectos.
 * `SCRUM`, para gestionar el tiempo de desarrollo.
 
 
@@ -30,33 +31,29 @@ internet la información (back end).
 - [Instalación y configuración](#instalación-y-configuración)
     - [Angular](#angular)
     - [Comandos](#comandos)
-- [Customization and Editing](#customization-and-editing)
-    - [General](#general)
-    - [Images](#images)
-    - [Header Section](#header-section)
-    - [Lead Section](#lead-section)
-    - [About Section](#about-section)
-    - [Experience Section](#experience-section)
-    - [Education Section](#education-section)
-    - [Projects Section](#projects-section)
-    - [Skills Section](#skills-section)
-    - [Contact Section](#contact-section)
-    - [Footer Section](#footer-section)
-    - [Optional Sections](#optional-sections)
-- [Changelog](#changelog)
-- [License](#license)
+- [La app se divide en](#la-app-se-divide-en)
+    - [Acerca de](#acerca-de)
+    - [Banner](#banner)
+    - [Educacion](#eduacacion)
+    - [Experiencia](#experiencia)
+    - [HardandsoftSkills](#hardandsoftSkills)
+    - [Header](#header)
+    - [Home](#home)
+    - [Login](#login)
+    - [Logo-arg-progr](#logo-arg-progr)
+    - [Proyectos](#proyectos)
+- [Licencia](#licencia)
 
 ## Instalación y configuración
 
+## Angular
 
-### Angular
 1. https://angular.io/
-2. Este proyecto fue generado con [Angular CLI](https://github.com/angular/
-angular-cli) versión 14.0.5.
-3. también debes tener instalado NodeJs
-4. https://nodejs.org/en/download/
+2. Este proyecto fue generado con [Angular CLI](https://github.com/angular/angular-cli) versión 14.0.5.
+3. también debes tener instalado [NodeJs](https://nodejs.org/en/download/)
+4. NodeJs ya te instala los paquetes npm necesarios.
 
-### Comandos
+## Comandos
 
 Servidor de desarrollo
 
@@ -81,47 +78,76 @@ capacidades.
 Para obtener más ayuda sobre Angular CLI, use `ng help` o consulte [Angular CLI
 Descripción general y referencia de comandos] (https://angular.io/cli) página.
 
+## La app se divide en
+
+### Acerca de
+Breve descripcion personal o lo que creas que sea importante transmitir. Informacion profesional resumida sobre vos.
+
+### Banner
+un Banner que represente la idea principal que queres transmitir.
+
+### Educacion
+Información Academica, certificaciones, cursos.
+
+### Experiencia
+Informacion de trayectoria laboral.
+
+### HardandsoftSkills
+Habilidades tecnologicas y habilidades blandas, como por ejemplo la comunicación efectiva. Visualizado con porcentajes para ver el grado de dominio de cada una.
+
+### Header
+En la parte superior izquierda, debe contener un logo y nombre dle programa.
+
+### Home
+La vista principal de la app.
+
+### Login
+La vista para que usuario pueda loguearse. Con la cual debe contar con un username y password. Una vez logueado el usuario puede editar los componentes Experiencia, Educacion, Skills y Proyectos.
+
+### Logo-arg-progr
+Logo de la institución.
+
+### Proyectos
+Proyecto de los que fuiste parte y desarrollaste.
 
 
 
+# Componente Acerca De
+### 🚀Lo unico que traigo de forma automatica es el nombre y el apellido a traves de Postman, no aplica dinamismo.🚀
+
+
+```HTML
+
+<div class="row">
+
+  <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2">
+    <img src="../../../assets/fotoZoom.jpg" alt="foto de perfil personal" 
+class="img-fluid" id="foto__perfil__mitad">
+  </div>
+
+  <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2">
+    <p id="nombre">{{persona.nombre}} {{persona.apellido}} </p>
+    <p id="jr">Full Stack Developer Jr.</p>
+  </div>
+
+  <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+    <span>
+      <h1>Acerca de</h1>
+      <p>Empecé mi trayectoria en el sector Retail, en empresas especializadas en la 
+comercialización masiva de productos y servicios. Responsable de la ejecución 
+de las actividades comerciales del área, como atención al cliente y ventas. 
+Actualmente, estudio y desarrollo pequeños proyectos como páginas Web y Apps. 
+Aprender hace parte de mi día a día y los desafíos me motivan a encontrar las 
+mejores soluciones. Busco adquirir experiencia en el área de Tecnología de la 
+información.</p>
+    </span>
+  </div>
+
+</div>
+
+```
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-# Comando para instalar proyecto Angular
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.0.5.
-
-## Development server
-
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
-
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+## Licencia
+Completamente gratis (MIT)! Consulte [LICENSE.md](LICENSE.md) para obtener más información.
