@@ -1,35 +1,40 @@
-<!-- <app-navegacion></app-navegacion> -->
-
-<div class="col-lg-12">
-    <p>Hello word!..</p>
-</div>
-
 <div class="container mx-auto" id="fondobanner">
-    <div class="card-123 mx-auto">
-        <div class="card-header" id="alineado" *ngIf="isLogged">
-            <label>
-                <h1>Menú Skills</h1>
-            </label>
-        </div>
-        <div class="card-body">
-            <div id="alineado">
-                <form (ngSubmit)="updatesoft()" novalidate #f="ngForm">
-                    <div>
-                        <label for="nombreS">Nombre De la Skill</label>
-                        <input type="text" class="form-control" id="nombreS" name="nombreS"
-                            [(ngModel)]="skill.nombreS" required>
-                    </div>
-                    <div>
-                        <label for="capacidadS">Capacidad de manejo de la skill</label>
-                        <input type="number" class="form-control" id="capacidadS" name="capacidadS"
-                            [(ngModel)]="skill.capacidadS" required>
-                    </div>
-                    <div class="p-3">
-                        <button class="btn btn-success">Actualizar Skill</button>
-                    </div>
-                </form>
-            </div>
-        </div>
+  <div class="card-123 mx-auto">
+    <div class="card-header" id="alineado" *ngIf="isLogged">
+      <label>
+        <h1>Menú Skills</h1>
+      </label>
     </div>
-
+    <div class="card-body">
+      <div id="alineado">
+        <form (ngSubmit)="updatesoft()" novalidate #f="ngForm">
+          <div>
+            <label for="nombreS">Nombre De la Skill</label>
+            <input
+              type = "text"
+              class = "form-control"
+              id = "nombreS"
+              name = "nombreS"
+              [(ngModel)] = "skill.nombreS"
+              required
+            />
+          </div>
+          <div>
+            <label for="capacidadS">Capacidad de manejo de la skill</label>
+            <input
+              type = "number"
+              class = "form-control"
+              id = "capacidadS"
+              name = "capacidadS"
+              [(ngModel)] = "skill.capacidadS"
+              required
+            />
+          </div>
+          <div class="p-3">
+            <button class="btn btn-success">Actualizar Skill</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
 </div>
