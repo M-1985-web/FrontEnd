@@ -50,6 +50,7 @@ internet la información (back end).
     - [Login](#login)
     - [Logo-arg-progr](#logo-arg-progr)
     - [Proyectos](#proyectos)
+    - [Footer](#footer)
 - [Entorno de prueba](#entorno-de-prueba)
 - [Base de datos](#base-de-datos)
 - [Ide's](#ides)
@@ -176,6 +177,10 @@ Logo de la institución.
 Proyecto de los que fuiste parte y desarrollaste.
 
 ![Proyectos](https://github.com/M-1985-web/FrontEnd/blob/master/src/assets/readmeFront/proyectos.png)
+
+### Footer
+
+![Footer](https://github.com/M-1985-web/FrontEnd/blob/master/src/assets/readmeFront/footer2.png)
 
 
 
