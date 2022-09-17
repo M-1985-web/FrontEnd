@@ -6,7 +6,7 @@
 
 # Para que corra el proyecto ademas de ejecutar esta carpeta Front-End (con Firebase) debes ejecutar tambien el siguiente repositorio (con Heroku): 🚀
 
--[repo-back](https://github.com/M-1985-web/BackEnd)
+- [repo-back](https://github.com/M-1985-web/BackEnd)
 
 
 ## Caracteristicas generales del Proyecto 🚀
@@ -88,7 +88,7 @@ Ejecute `ng e2e` para ejecutar las pruebas de extremo a extremo a través de una
 capacidades.
 
 Para obtener más ayuda sobre Angular CLI, use `ng help` o consulte [Angular CLI
-Descripción general y referencia de comandos] (https://angular.io/cli) página.
+Descripción general y referencia de comandos](https://angular.io/cli) página.
 
 ## La app se divide en 🚀
 
