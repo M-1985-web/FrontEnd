@@ -1,13 +1,13 @@
-<div class="row p-4" style="background-color: rgba(11, 3, 1, 0.768)">
+<div class="row p-4 " style="background-color: rgba(11, 3, 1, 0.768)">
   <div class="container col-lg-12" style="background-color: rgb(112, 159, 225)">
     <div
       class="card-123 mx-auto text-center"
-      style="width: 30%"
+      style="width: 80%"
       *ngIf="skill"
     >
       <div class="card-header">
         <label>
-          <h1>Editar SoftSkills</h1>
+          <h1>Editar SoftSkill</h1>
         </label>
       </div>
 
@@ -15,7 +15,7 @@
         <div id="alineado">
           <form (ngSubmit)="updatesoft()" novalidate #f="ngForm">
             <div>
-              <label for="nombreS">Nombre De la SoftSkills</label>
+              <label for="nombreS">Nombre De la SoftSkill</label>
               <input
                 type="text"
                 class="form-control"
@@ -27,7 +27,7 @@
             </div>
             <div>
               <label for="capacidadS"
-                >Capacidad de manejo de la SoftSkills
+                >Capacidad de manejo de la SoftSkill
               </label>
               <input
                 type="number"
@@ -39,7 +39,7 @@
               />
             </div>
             <div class="p-3">
-              <button class="btn btn-success">Actualizar SoftSkills</button>
+              <button class="btn btn-success">Actualizar SoftSkill</button>
             </div>
           </form>
         </div>

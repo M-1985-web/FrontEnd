@@ -2,8 +2,9 @@
   <div class="row">
     <div>
       <form (ngSubmit)="onCreate()" novalidate #f="ngForm">
-        <div class="form-group">
-          <label for="nombreExperiencia"> Nombre de la Empresa </label>
+        <div class="form-group text-center">
+          <label for="nombreExperiencia">
+            <h1>Nombre de la Empresa</h1></label>
           <input
             type="text"
             class="form-control"
@@ -13,9 +14,9 @@
             required
           />
         </div>
-        <div class="form-group">
+        <div class="form-group text-center">
           <label for="descripcionExperiencia">
-            Descripcion de la tarea realizada en la empresa
+            <h5>Descripcion del trabajo</h5>
           </label>
           <input
             type="text"
@@ -28,9 +29,9 @@
         </div>
 
         <!--ACA AGREGO IMAGEN-->
-        <div>
+        <div class="text-center">
           <label for="imgExperiencia"
-            >Imagen dentro de carpeta Assets (link completo, ver ejemplo):
+            ><h5>Imagen dentro de carpeta Assets (link completo, ver ejemplo):</h5>
           </label>
           <input
             type="text"
@@ -40,10 +41,15 @@
             name="imgExperiencia"
             [(ngModel)]="imgExperiencia"
           />
+
+          <!--BOTON-->
+          <button class="btn btn-info">Agregar experiencia</button>
+
+
         </div>
 
-        <!--BOTON-->
-        <button class="btn btn-info">Agregar experiencia</button>
+
+
       </form>
     </div>
   </div>

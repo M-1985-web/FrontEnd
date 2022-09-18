@@ -11,7 +11,6 @@ import { TokenService } from 'src/app/service/token.service';
 })
 export class EditSkillComponent implements OnInit {
   skill: Skill = null;
-  //skillsoft: SoftSkill = null;
   isLogged = false;
 
   constructor(
@@ -34,7 +33,7 @@ export class EditSkillComponent implements OnInit {
         this.skill = data;
       },
       (err) => {
-        alert('Error al modicar skills');
+        alert('Error al modicar skill..');
         this.router.navigate(['']);
       }
     );
@@ -44,11 +43,11 @@ export class EditSkillComponent implements OnInit {
     const id = this.activatedRouter.snapshot.params['id'];
     this.skills.update(id, this.skill).subscribe(
       (data) => {
-        alert('Skill actualizada.');
+        alert('Skill actualizada con Exito!');
         this.router.navigate(['']);
       },
       (err) => {
-        alert('No se pudo actualizar.');
+        alert('No se pudo actualizar Skill..');
       }
     );
   }

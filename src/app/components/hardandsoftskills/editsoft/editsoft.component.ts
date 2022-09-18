@@ -33,7 +33,7 @@ export class EditsoftComponent implements OnInit {
         this.skill = data;
       },
       (err) => {
-        alert('Error al encontrar Skills');
+        alert('Error al encontrar Skill..');
         this.router.navigate(['']);
       }
     );
@@ -43,11 +43,11 @@ export class EditsoftComponent implements OnInit {
     const id = this.activateRouter.snapshot.params['id'];
     this.softSkills.update(id, this.skill).subscribe(
       (data) => {
-        alert('Skill actualizada con exito.');
+        alert('Skill actualizada con exito!!');
         this.router.navigate(['']);
       },
       (err) => {
-        alert('No se pudo actualizar.');
+        alert('No se pudo actualizar skill..');
         this.router.navigate(['']);
       }
     );

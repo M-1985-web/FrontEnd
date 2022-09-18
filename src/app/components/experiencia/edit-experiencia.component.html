@@ -5,14 +5,15 @@
   *ngIf="experiencia"
 >
   <div class="container col-lg-12" style="background-color: white">
-    <div class="card mx-auto text-center" style="width: 60%" *ngIf="isLogged">
+    <div class="card mx-auto text-center" style="width: 100%" *ngIf="isLogged">
       <div class="card-header">
-        <h1>Proyecto</h1>
+        <h1>Editar Experiencia</h1>
       </div>
       <div class="card-body">
         <form (ngSubmit)="onUpdate()" novalidate #f="ngForm">
           <div>
-            <label for="nombreExperiencia">Editar: Nombre del proyecto </label>
+            <label for="nombreExperiencia">
+              <h5>Nombre</h5></label>
             <input
               type="text"
               class="form-control"
@@ -24,7 +25,7 @@
           </div>
           <div>
             <label for="descripcionExperiencia"
-              >Editar: descripcion del Trabajo u experiencia
+              ><h5>Descripción</h5>
             </label>
             <textarea
               name="descripcionExperiencia"
@@ -39,7 +40,7 @@
           <!--IMAGEN PROYECTO-->
           <div>
             <label for="imgExperiencia" class="form-label"
-              >Editar: Imagen Proyecto (link completo como en el ejemplo):
+              ><h5>Editar: Imagen(link completo como en el ejemplo):</h5>
             </label>
             <input
               type="text"
@@ -103,7 +104,7 @@
   </div>
 </div>
 -->
-          <button class="btn btn-info">Actualizar 
+          <button class="btn btn-info">Actualizar
             experiencia
           </button>
         </form>
