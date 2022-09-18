@@ -26,7 +26,7 @@
       <circle-progress
         [percent]="Skill.capacidadS"
         [radius]="80"
-        title="{{ Skill.nombreS }}"
+        title= {{Skill.nombreS}}
         [showSubtitle]="false"
         [showUnits]="false"
         [outerStrokeWidth]="8"
@@ -39,7 +39,7 @@
       <button
         class="btn btn-primary"
         id="boton-skill"
-        routerLink="/editskill/{{ Skill.id }}"
+        routerLink="/editskill/{{Skill.id}}"
         *ngIf="isLogged"
       >
         <i class="bi bi-pencil"></i>
@@ -55,7 +55,7 @@
     </div>
   </div>
 
-  <!--                         Soft -->
+  <!--Soft -->
 
   <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" id="alineado">
     <h2>Soft-Skills</h2>
@@ -66,7 +66,7 @@
       <circle-progress
         [percent]="softSkill.capacidadS"
         [radius]="80"
-        title="{{ softSkill.nombreS }}"
+        title= {{softSkill.nombreS}}
         [showSubtitle]="false"
         [showUnits]="false"
         [outerStrokeWidth]="8"
@@ -79,7 +79,7 @@
       <button
         class="btn btn-primary"
         id="boton-skill"
-        routerLink="/editsoft/{{ softSkill.id }}"
+        routerLink="/editsoft/{{softSkill.id}}"
         *ngIf="isLogged"
       >
         <i class="bi bi-pencil"></i>

@@ -1,45 +1,70 @@
 <!--  <app-navegacion></app-navegacion>  -->
 <div class="col-lg-12">
-    <p></p>
+  <p></p>
 </div>
 
-<div class="container mx-auto" id="fondobanner">
-    <div class="card-123 mx-auto">
-        <div class="card-header" id="alineado" *ngIf="isLogged">
-            <label>
-                <h1>Menú Skills</h1>
-            </label>
-        </div>
-        <div class="card-body">
-            <div id="alineado">
-                <form (ngSubmit)="onCreate1()" novalidate #f="ngForm">
-                    <div>
-                        <label for="nombreS">Nombre De la Skills</label>
-                        <input type="text" class="form-control" id="nombreS" name="nombreS" placeholder=""
-                            [(ngModel)]="nombreS" required>
-                    </div>
-                    <div>
-                        <label for="capacidadS">Capacidad de manejo de la Skills</label>
-                        <input type="number" class="form-control" id="capacidadS" name="capacidadS"
-                            [(ngModel)]="capacidadS" required>
-
-                    </div>
-                    <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="radio" name="tipoS" id="Hard" value="hard"
-                            [(ngModel)]="tipoS" required>
-                        <label class="form-check-label" for="Hard">Hard Skill</label>
-                    </div>
-                    <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="radio" name="tipoS" id="Soft" value="soft"
-                            [(ngModel)]="tipoS" required>
-                        <label class="form-check-label" for="Soft">Soft Skill</label>
-                    </div>
-                    <div class="p-3">
-                        <button class="btn btn-success">Añadir Skill</button>
-                    </div>
-                </form>
-            </div>
-        </div>
+<div class="container mx-auto">
+  <div class="card-123 mx-auto">
+    <div class="card-header" id="alineado" *ngIf="isLogged">
+      <label>
+        <h1>Menú Skills</h1>
+      </label>
     </div>
-
+    <div class="card-body">
+      <div id="alineado">
+        <form (ngSubmit)="onCreate1()" novalidate #f="ngForm">
+          <div>
+            <label for="nombreS">Nombre De la Skills</label>
+            <input
+              type="text"
+              class="form-control"
+              id="nombreS"
+              name="nombreS"
+              placeholder=""
+              [(ngModel)]="nombreS"
+              required
+            />
+          </div>
+          <div>
+            <label for="capacidadS">Capacidad de manejo de la Skills</label>
+            <input
+              type="number"
+              class="form-control"
+              id="capacidadS"
+              name="capacidadS"
+              [(ngModel)]="capacidadS"
+              required
+            />
+          </div>
+          <div class="form-check form-check-inline">
+            <input
+              class="form-check-input"
+              type="radio"
+              name="tipoS"
+              id="Hard"
+              value="hard"
+              [(ngModel)]="tipoS"
+              required
+            />
+            <label class="form-check-label" for="Hard">Hard Skill</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input
+              class="form-check-input"
+              type="radio"
+              name="tipoS"
+              id="Soft"
+              value="soft"
+              [(ngModel)]="tipoS"
+              required
+            />
+            <label class="form-check-label" for="Soft">Soft Skill</label>
+          </div>
+          <div class="p-3">
+            <button class="btn btn-success">Añadir Skill</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
 </div>
