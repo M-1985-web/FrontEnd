@@ -8,8 +8,8 @@ import { Proyecto } from '../model/proyecto';
   providedIn: 'root',
 })
 export class SProyectoService {
-  //private URL = 'https://backendmmm.herokuapp.com/proyec/';
-  URL = 'http://localhost:8080/proyec/';
+  private URL = 'https://backendmmm.herokuapp.com/proyec/';
+  //URL = 'http://localhost:8080/proyec/';
 
   constructor(private httpClient: HttpClient) {}
 
