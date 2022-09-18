@@ -10,9 +10,9 @@ export class EducacionService {
   //aca va la url de heroku
   //url por defecto, es de forma local, lo traemos del back /educacion
   //produ local
-  URL = 'http://localhost:8080/educacion/';
+  //URL = 'http://localhost:8080/educacion/';
   //trabajo en producion
-  //private URL = 'https://backendmmm.herokuapp.com/educacion/';
+  URL = 'https://backendmmm.herokuapp.com/educacion/';
 
   constructor(private httpClient: HttpClient) {}
 
