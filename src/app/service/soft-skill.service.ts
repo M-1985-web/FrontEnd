@@ -22,14 +22,14 @@ export class SoftSkillService {
     return this.httpClient.get<SoftSkill>(`${this.URL}/detail/${id}`);
   }
 
-  public save(ski: SoftSkill): Observable<any> {
+  public save(softSkill: SoftSkill): Observable<any> {
     //return this.httpClient.post<SoftSkill>(this.URL + 'create', ski);
-    return this.httpClient.post<SoftSkill>(`${this.URL}/create`, ski);
+    return this.httpClient.post<SoftSkill>(`${this.URL}/create`, softSkill);
   }
 
-  public update(id: number, ski: SoftSkill): Observable<any> {
+  public update(id: number, softSkill: SoftSkill): Observable<any> {
     //return this.httpClient.put<any>(this.URL + `update/${id}`, ski);
-    return this.httpClient.put<any>(`${this.URL}/update/${id}`, ski);
+    return this.httpClient.put<any>(`${this.URL}/update/${id}`, softSkill);
   }
 
   public delete(id: number): Observable<any> {

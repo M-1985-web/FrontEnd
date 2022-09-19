@@ -22,14 +22,14 @@ export class SkillService {
     return this.httpClient.get<Skill>(`${this.URL}/detail/${id}`);
   }
 
-  public save(ski: Skill): Observable<any> {
+  public save(skill: Skill): Observable<any> {
     //return this.httpClient.post<Skill>(this.URL + 'create', ski);
-    return this.httpClient.post<Skill>(`${this.URL}/create`, ski);
+    return this.httpClient.post<Skill>(`${this.URL}/create`, skill);
   }
 
-  public update(id: number, ski: Skill): Observable<any> {
+  public update(id: number, skill: Skill): Observable<any> {
     //return this.httpClient.put<any>(this.URL + `update/${id}`, ski);
-    return this.httpClient.put<any>(`${this.URL}/update/${id}`, ski);
+    return this.httpClient.put<any>(`${this.URL}/update/${id}`, skill);
   }
 
   public delete(id: number): Observable<any> {
