@@ -8,9 +8,9 @@ import { persona } from '../model/persona.model';
   providedIn: 'root',
 })
 export class PersonaService {
-  //cree la variable URL que llama del front al back, es generico
+  //cree la variable URL que llama del front al back, es generico private
   //URL = 'http://localhost:8080/personas/';
-  private URL = 'https://backendmmm.herokuapp.com/personas';
+  URL = 'https://backendmmm.herokuapp.com/personas';
 
   constructor(private http: HttpClient) {}
 

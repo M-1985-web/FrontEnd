@@ -7,8 +7,9 @@ import { Experiencia } from '../model/experiencia';
   providedIn: 'root',
 })
 export class SExperienciaService {
+  //private
   //URL = 'http://localhost:8080/experiencia/';
-  private URL = 'https://backendmmm.herokuapp.com/experiencia';
+  URL = 'https://backendmmm.herokuapp.com/experiencia';
 
   constructor(private httpClient: HttpClient) {}
 
@@ -35,7 +36,7 @@ export class SExperienciaService {
   //metodo para actualizar , poner editar
   public update(id: number, experiencia: Experiencia): Observable<Experiencia> {
     //return this.httpClient.put<any>(this.URL + `update/${id}`, experiencia);
-     return this.httpClient.put<any>(`${this.URL}/update/${id}`, experiencia);
+    return this.httpClient.put<any>(`${this.URL}/update/${id}`, experiencia);
   }
 
   //metodo borrar

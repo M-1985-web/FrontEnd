@@ -13,8 +13,9 @@ export class AuthService {
   //trabajo local
   //authURL = 'http://localhost:8080/auth/';
 
-  //trabajo en producion
-   private authURL = 'https://backendmmm.herokuapp.com/auth/';
+  //trabajo en producion private
+  // le saque el path
+  authURL = 'https://backendmmm.herokuapp.com/auth/';
 
   constructor(private httpClient: HttpClient) {}
 
