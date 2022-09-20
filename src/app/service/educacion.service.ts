@@ -12,7 +12,7 @@ export class EducacionService {
   //produ local
   //URL = 'http://localhost:8080/educacion/';
   //trabajo en producion private
-  URL = 'https://backendmmm.herokuapp.com/educ';
+  private URL = 'https://appbackap.herokuapp.com/educ';
 
   constructor(private httpClient: HttpClient) {}
 
