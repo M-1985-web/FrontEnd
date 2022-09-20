@@ -15,17 +15,17 @@ export class AuthService {
 
   //trabajo en producion private
   // le saque el path
-  authURL = 'https://backendmmm.herokuapp.com/auth/';
+  authURL = 'https://backendmmm.herokuapp.com/auth';
 
   constructor(private httpClient: HttpClient) {}
 
   //metodo nuevo
   public nuevo(nuevoUsuario: NuevoUsuario): Observable<any> {
-    return this.httpClient.post<any>(this.authURL + 'nuevo', nuevoUsuario);
+    return this.httpClient.post<any>(this.authURL + '/nuevo', nuevoUsuario);
   }
 
   //metodo login
   public login(loginUsuario: LoginUsuario): Observable<JwtDto> {
-    return this.httpClient.post<JwtDto>(this.authURL + 'login', loginUsuario);
+    return this.httpClient.post<JwtDto>(this.authURL + '/login', loginUsuario);
   }
 }
