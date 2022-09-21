@@ -15,7 +15,7 @@ export class AuthService {
 
   //trabajo en producion private
   // le saque el path
-  authURL = 'https://appbackap.herokuapp.com/auth';
+  //authURL = 'https://appbackap.herokuapp.com/auth';
 
   constructor(private httpClient: HttpClient) {}
 
