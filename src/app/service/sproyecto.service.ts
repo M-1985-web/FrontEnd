@@ -9,7 +9,7 @@ import { Proyecto } from '../model/proyecto';
 })
 export class SProyectoService {
   // private
-  private URL = 'https://appbackap.herokuapp.com/proy';
+  URL = 'https://appbackap.herokuapp.com/proy/';
   //URL = 'http://localhost:8080/proyec/';
 
   constructor(private httpClient: HttpClient) {}
@@ -17,26 +17,26 @@ export class SProyectoService {
   //trae la lista
   public list(): Observable<Proyecto[]> {
     //return this.httpClient.get<Proyecto[]>(this.URL + 'lista');
-    return this.httpClient.get<Proyecto[]>(`${this.URL}/lista`);
+    return this.httpClient.get<Proyecto[]>(`${this.URL}lista`);
   }
 
   public buscar(id: number): Observable<Proyecto> {
     //return this.httpClient.get<Proyecto>(this.URL + `buscar/${id}`);
-    return this.httpClient.get<Proyecto>(`${this.URL}/buscar/${id}`);
+    return this.httpClient.get<Proyecto>(`${this.URL}buscar/${id}`);
   }
 
   public save(proyec: Proyecto): Observable<Proyecto> {
     //return this.httpClient.post<any>(this.URL + 'create', proyec);
-    return this.httpClient.post<Proyecto>(`${this.URL}/create`, proyec);
+    return this.httpClient.post<Proyecto>(`${this.URL}create`, proyec);
   }
 
   //editar
   public update(id: number, proyec: Proyecto): Observable<Proyecto> {
-    return this.httpClient.put<any>(`${this.URL}/editar/${id}`, proyec);
+    return this.httpClient.put<any>(`${this.URL}editar/${id}`, proyec);
   }
 
   public delete(id: number): Observable<any> {
     //return this.httpClient.delete<any>(this.URL + `delete/${id}`);
-    return this.httpClient.delete<any>(`${this.URL}/delete/${id}`);
+    return this.httpClient.delete<any>(`${this.URL}delete/${id}`);
   }
 }
