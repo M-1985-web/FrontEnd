@@ -10,7 +10,7 @@ import { JwtDto } from '../model/jwt-dto';
 })
 export class AuthService {
   //le pasamos el endpoint del back
-  //trabajo local
+  //trab local
   //authURL = 'http://localhost:8080/auth/';
 
   //trabajo en producion private
