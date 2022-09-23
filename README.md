@@ -186,7 +186,7 @@ Proyecto de los que fuiste parte y desarrollaste.
 
 # Componente Acerca De 🚀
 
-### 🚀El nombre y apellido lo traigo directamente a traves de Postman desde el back, si deseas cambiarlo tendra que ser por postman (no aplica dinamismo modo edicion.), todo lo de mas como profesion, acerca de, y descripcion desde el HTML5 (como se muestra abajo) lo debes mofificar 🚀
+### 🚀(no aplica dinamismo modo edicion.) Lo modificas desde el HTML5 como se muestra abajo. 🚀
 
 
 ```HTML
@@ -199,7 +199,7 @@ class="img-fluid" id="foto__perfil__mitad">
   </div>
 
   <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2">
-    <p id="nombre">{{persona.nombre}} {{persona.apellido}} </p>
+    <p id="nombre">Martin Maldonado</p>
     <p id="jr">Full Stack Developer Jr.</p>
   </div>
 
