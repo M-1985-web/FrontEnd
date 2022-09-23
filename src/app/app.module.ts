@@ -59,12 +59,10 @@ import { EditSkillComponent } from './components/hardandsoftskills/edit-skill/ed
     FormsModule,
     BrowserAnimationsModule,
     NgCircleProgressModule.forRoot({}),
-    HttpClientModule
+    HttpClientModule,
   ],
 
-  providers: [
-    interceptorProvider
-  ],
-  bootstrap: [AppComponent]
+  providers: [interceptorProvider],
+  bootstrap: [AppComponent],
 })
 export class AppModule { }
