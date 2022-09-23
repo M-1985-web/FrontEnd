@@ -32,7 +32,7 @@ export class SProyectoService {
 
   //editar
   public update(id: number, proyec: Proyecto): Observable<Proyecto> {
-    return this.httpClient.put<any>(`${this.URL}/editar/${id}`, proyec);
+    return this.httpClient.put<any>(`${this.URL}/update/${id}`, proyec);
   }
 
   public delete(id: number): Observable<any> {
