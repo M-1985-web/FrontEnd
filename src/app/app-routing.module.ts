@@ -11,6 +11,7 @@ import { EditproyectComponent } from './components/proyectos/editproyect/editpro
 import { NewskillComponent } from './components/hardandsoftskills/newskill/newskill.component';
 import { EditSkillComponent } from './components/hardandsoftskills/edit-skill/edit-skill.component';
 import { EditsoftComponent } from './components/hardandsoftskills/editsoft/editsoft.component';
+import { EditacercadeComponent } from './components/acerca-de/editacercade/editacercade.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
@@ -21,6 +22,7 @@ const routes: Routes = [
   { path: 'nuevaedu', component: NuevaEducacionComponent },
   { path: 'nuevaskill', component: NewskillComponent },
   // -- Editar exits -- //
+  { path: 'editaboutme/:id', component: EditacercadeComponent },
   { path: 'editexp/:id', component: EditExperienciaComponent },
   { path: 'editedu/:id', component: EditarEducacionComponent },
   { path: 'editproyec/:id', component: EditproyectComponent },
