@@ -33,7 +33,7 @@
         type="button"
         class="btn btn-primary bi bi-pencil"
         *ngIf="isLogged"
-        routerLink="/editaboutme/{{ persona.id }}"
+        [routerLink]="'/editaboutme/{{ persona.id }}'"
         title="Editar"
       >
       </button>

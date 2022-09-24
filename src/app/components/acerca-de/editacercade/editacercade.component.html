@@ -1,7 +1,23 @@
 <div class="container-fluid mt-3">
   <form #form="ngForm" class="needs-validation" novalidate>
+    <!--IMGURL-->
     <div class="row">
-      <label for="nombre" class="form-label">Nombre: </label>
+      <label for="imgurl" class="form-label">imgUrl</label>
+      <input
+        class="form-control"
+        type="text"
+        id="imgurl"
+        name="imgurl"
+        [(ngModel)]="persona.imgurl"
+        required
+        maxlength="50"
+      />
+      <div class="invalid-feedback">Campo obligatorio.</div>
+      <div class="valid-feedback">Campo correcto.</div>
+    </div>
+    <!--NOMBRE-->
+    <div class="row">
+      <label for="nombre" class="form-label">Nombre</label>
       <input
         class="form-control"
         type="text"
@@ -14,6 +30,7 @@
       <div class="invalid-feedback">Campo obligatorio.</div>
       <div class="valid-feedback">Campo correcto.</div>
     </div>
+    <!--APELLIDO-->
     <div class="row">
       <label class="form-label" for="apellido">Apellido: </label>
       <input
@@ -28,6 +45,7 @@
       <div class="invalid-feedback">Campo obligatorio.</div>
       <div class="valid-feedback">Campo completo.</div>
     </div>
+    <!--OFICIO-->
     <div class="row mb-3">
       <label class="form-label" for="oficio">Oficio</label>
       <input
@@ -41,48 +59,35 @@
       <div class="invalid-feedback">Campo obligatorio</div>
       <div class="valid-feedback">Campo completo</div>
     </div>
+    <!--ABOUTME-->
     <div class="row mb-3">
       <label class="form-label" for="aboutme">Acerca de</label>
-      <textarea class="form-control"
-      rows="3"
-      type="textarea"
-      id="aboutme"
-      name="aboutme"
-      [(ngModel)]="persona.aboutme"
-      minlength="30"
-      required>
-
+      <textarea
+        class="form-control"
+        rows="3"
+        type="textarea"
+        id="aboutme"
+        name="aboutme"
+        [(ngModel)]="persona.aboutme"
+        minlength="30"
+        required
+      >
       </textarea>
       <div class="invalid-feedback">
-        Campo obligatorio, mínimo 30 caracteres.
+        Campo obligatorio, mínimo 30 caracteres!!
       </div>
       <div class="valid-feedback">Campo completo</div>
     </div>
 
     <div class="row">
       <div class="col-sm-6 col-6">
-        <button
-          type="submit"
-          class="btn btn-md btn-success"
-          (click)="onUpdate()"
-        >
+        <button type="submit" class="btn btn-md btn-info" (click)="onUpdate()">
           Actualizar
-        </button>
-      </div>
-      <div class="col-sm-6 col-6">
-        <button class="btn btn-md btn-primary" [routerLink]="'/'">
-          Volver sin cambios
         </button>
       </div>
     </div>
   </form>
 </div>
-
-
-
-
-
-
 
 <!--
 <div class="container">
