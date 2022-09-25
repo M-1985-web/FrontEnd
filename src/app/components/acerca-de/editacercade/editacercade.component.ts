@@ -15,7 +15,7 @@ export class EditacercadeComponent implements OnInit {
   constructor(
     public personaService: PersonaService,
     private tokenService: TokenService,
-    private activatedRoute: ActivatedRoute,
+    //private activatedRoute: ActivatedRoute,
     private router: Router
   ) {}
 
@@ -34,35 +34,18 @@ export class EditacercadeComponent implements OnInit {
   }
 
   onUpdate(): void {
-    //para deshabilitar el envío de formularios si hay campos no válidos
-    (function () {
-      'use strict';
+    //const id = this.activatedRoute.snapshot.params['id'];
 
-      // Obtener todos los formularios a los que queremos aplicar estilos de validación de Bootstrap personalizados
-      var forms = document.querySelectorAll('.needs-validation');
-
-      // Bucle sobre ellos y evitar el envío
-      Array.prototype.slice.call(forms).forEach(function (form) {
-        form.addEventListener(
-          'submit',
-          function (event: any): void {
-            if (!form.checkValidity()) {
-              event.preventDefault();
-              event.stopPropagation();
-            }
-
-            form.classList.add('was-validated');
-          },
-          false
-        );
-      });
-    })();
-    //si esta todo ok realiza la edicion
-    this.personaService.editarPersona(this.persona).subscribe((data) => {
-      alert('Persona modificada con exito!!!');
-      this.router.navigate(['']);
-    });
+    this.personaService.editarPersona(this.persona).subscribe(
+      (data) => {
+        this.router.navigate(['']);
+        alert('Persona modificada con exito!!!');
+      },
+      (err) => {
+        alert('No se pudo actualizar');
+        this.router.navigate(['']);
+      }
+    );
   }
-
 
 }
