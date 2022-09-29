@@ -8,15 +8,22 @@ import { Persona } from '../model/persona';
   providedIn: 'root',
 })
 export class PersonaService {
-  URL = 'https://appmartinportfolioback.herokuapp.com/persona/';
+  URL = 'https://appmartinportfolioback.herokuapp.com/persona';
 
   constructor(private http: HttpClient) {}
 
   public getPersona(): Observable<Persona> {
-    return this.http.get<Persona>(`${this.URL}traer`);
+    return this.http.get<Persona>(`${this.URL}/traer`);
   }
 
   public editarPersona(persona: Persona): Observable<Persona> {
-    return this.http.put<Persona>(`${this.URL}editar`, persona);
+    return this.http.put<Persona>(`${this.URL}/editar`, persona);
   }
+
+  public save(persona: Persona): Observable<Persona> {
+    return this.http.post<Persona>(`${this.URL}/crear`, persona);
+}
+
+
+
 }
