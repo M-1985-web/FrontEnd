@@ -28,7 +28,8 @@ export class AcercaDeComponent implements OnInit {
     //subcribe: conecta el observable con eventos observables
     //this.personaService.getPersona().subscribe(data =>{this.persona = data})
     this.personaService.getPersona().subscribe((data) => {
-      this.persona = data})
+      this.persona = data;
+    });
 
     if (this.tokenService.getToken()) {
       this.isLogged = true;

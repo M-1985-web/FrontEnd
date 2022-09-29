@@ -1,10 +1,8 @@
 <!--
 ../../../assets/fotoZoom.jpg
-
-
 -->
-
 <div class="row">
+  <!-- FOTO -->
   <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2">
     <img
       name="imgurl"
@@ -15,6 +13,7 @@
     />
   </div>
 
+  <!-- NOMBRE, APELLIDO, OFICIO -->
   <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2">
     <p id="nombre">{{ persona.nombre }} {{ persona.apellido }}</p>
     <p id="jr">{{ persona.oficio }}</p>
@@ -26,16 +25,19 @@
     <p id="jr">Full Stack Developer Jr.</p>
   </div>
   -->
+
+  <!-- ACERCA DE -->
   <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" >
     <span>
       <h2 class="text-center">Acerca de</h2>
       <p id="aboutme">{{ persona.aboutme }}</p>
     </span>
-    <div *ngIf="isLogged">
+    <div>
      <button
         type="button"
         class="btn btn-primary bi bi-pencil"
-        [routerLink]="'/editaboutme/{{ persona.id }}'"
+        *ngIf="isLogged"
+        routerLink="/editaboutme/{{ persona.id }}"
         title="Editar"
       >
       </button>

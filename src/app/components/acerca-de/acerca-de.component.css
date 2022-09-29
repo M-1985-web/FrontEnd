@@ -3,14 +3,21 @@
 
 }
 
-
-
 div {
   background-color:#73aeee;
   text-align:left;
 
 }
 
+/*etiqueta nombre*/
+#nombre {
+  font-weight: bold;
+  margin-top: 30%;
+  text-transform: uppercase;
+}
+
+
+/*RESPONSIVE*/
 /*estilo de la foto de perfil de 576px para arriba comportate asi*/
 @media (min-width: 576px){
   #foto__perfil__mitad {
@@ -23,6 +30,7 @@ div {
   }
 }
 
+/*RESPONSIVE*/
 @media (max-width: 575px){
   #foto__perfil__mitad {
     position: absolute;
@@ -45,13 +53,6 @@ div {
 }
 
 
-/*etiqueta nombre*/
-#nombre {
-  font-weight: bold;
-  margin-top: 30%;
-  text-transform: uppercase;
-}
-
 /*RESPONSIVE*/
 @media screen and (max-width: 376px){
   #foto__perfil__mitad {
@@ -66,6 +67,7 @@ div {
 
 }
 
+/*RESPONSIVE*/
 @media (min-width: 768px ){
   #foto__perfil__mitad {
     position: absolute;
@@ -79,11 +81,7 @@ div {
 
 }
 
-
-
-
-
-
+/*RESPONSIVE*/
 @media (min-width: 951px ){
   #foto__perfil__mitad {
     position: absolute;
@@ -97,6 +95,7 @@ div {
 
 }
 
+/*RESPONSIVE*/
 @media (min-width: 1440px ){
   #foto__perfil__mitad {
     position: absolute;
@@ -110,6 +109,7 @@ div {
 
 }
 
+/*RESPONSIVE*/
 @media (min-width: 2560px ){
   #foto__perfil__mitad {
     position: absolute;
