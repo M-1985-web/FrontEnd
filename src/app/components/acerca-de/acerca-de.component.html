@@ -1,78 +1,36 @@
-<!--
-../../../assets/fotoZoom.jpg
--->
+
 <div class="row">
   <!-- FOTO -->
   <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2">
     <img
       name="imgurl"
-      src="{{persona.imgurl}}"
+      src="../../../assets/fotoZoom.jpg"
       alt="foto de perfil personal"
       class="img-fluid"
       id="foto__perfil__mitad"
     />
   </div>
 
-  <!-- NOMBRE, APELLIDO, OFICIO -->
-  <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2">
-    <p id="nombre">{{ persona.nombre }} {{ persona.apellido }}</p>
-    <p id="jr">{{ persona.oficio }}</p>
-  </div>
 
-  <!-- Esto es dinamico en el futuro
+
   <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2">
-    <p id="nombre">{{persona.nombre}} {{persona.apellido}} </p>
+    <p id="nombre">Martin Maldonado </p>
     <p id="jr">Full Stack Developer Jr.</p>
   </div>
-  -->
+
 
   <!-- ACERCA DE -->
   <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" >
     <span>
-<<<<<<< HEAD
+
       <h2>Acerca de</h2>
       <p>
         ¡Hello Word!. Mi nombre es Martín. Estudio y desarrollo proyectos como páginas Web y Apps. Aprender hace parte de mi día a día y los desafíos me motivan a encontrar las mejores soluciones. Busco adquirir experiencia en el área IT donde pueda desarrollar mis conocimientos técnicos, crecer junto a la empresa y con mis compañeros, cooperando con todos, trabajando en equipo y apoyando de la mejor manera posible. Siempre con enormes ganas de seguir aprendiendo.
       </p>
-=======
-      <h2 class="text-center">Acerca de</h2>
-      <p id="aboutme">{{ persona.aboutme }}</p>
->>>>>>> 83bad4702ebdf8ff2aea5cda63d198f7ee67363d
+
     </span>
-    <div>
-     <button
-        type="button"
-        class="btn btn-primary bi bi-pencil"
-        *ngIf="isLogged"
-        [routerLink]="'/editaboutme/{{ persona.id }}'"
-        title="Editar"
-      >
-      </button>
-    </div>
   </div>
 </div>
-
-<!--
-Full Stack Developer Jr.
--->
-
-
-
-<!--
-¡Hello Word!. Estudio y desarrollo proyectos como
-páginas Web y Apps. Aprender hace parte de mi día a día
-y los desafíos me motivan a encontrar las mejores
-soluciones. Busco adquirir experiencia en el área IT
-donde pueda desarrollar mis conocimientos técnicos y
-crecer junto a la empresa y a mis compañeros de
-trabajo, cooperando con todos, trabajando en equipo y apoyando de la mejor manera posible. Siempre con enormes ganas de seguir
-aprendiendo.
--->
-
-
-
-
-
 
 
 

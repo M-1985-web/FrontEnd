@@ -27,7 +27,7 @@ import { EditproyectComponent } from './components/proyectos/editproyect/editpro
 import { NewskillComponent } from './components/hardandsoftskills/newskill/newskill.component';
 import { EditsoftComponent } from './components/hardandsoftskills/editsoft/editsoft.component';
 import { EditSkillComponent } from './components/hardandsoftskills/edit-skill/edit-skill.component';
-import { EditacercadeComponent } from './components/acerca-de/editacercade/editacercade.component';
+
 
 @NgModule({
   declarations: [
@@ -51,8 +51,7 @@ import { EditacercadeComponent } from './components/acerca-de/editacercade/edita
     EditproyectComponent,
     NewskillComponent,
     EditsoftComponent,
-    EditSkillComponent,
-    EditacercadeComponent
+    EditSkillComponent
   ],
 
   imports: [
